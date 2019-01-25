@@ -6,12 +6,12 @@ public class CameraMovement : MonoBehaviour
 {
     public GameObject caravanModel;
     public float speed = 2.0f;
-    private Vector3 offset;
+    public Vector3 offset;
 
 
     private void Start()
     {
-        offset = this.transform.position;
+        //offset = this.transform.position;
     }
 
     void Update ()

@@ -11,6 +11,7 @@ public class HorseMovement : MonoBehaviour
     public int playerNum;
     [HideInInspector] public float initialMoveY;
     private bool canMoveForward;
+    public int deathCount;
 
     GamePad.Index Player;
     GameObject wagon;

@@ -10311,7 +10311,8 @@ Prefab:
       propertyPath: m_Name
       value: Tracks_01 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11100000, guid: 62824d16983629e4190869cb1c9884b5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 62824d16983629e4190869cb1c9884b5, type: 3}
   m_IsPrefabAsset: 0
 --- !u!1001 &1043224539
@@ -10942,7 +10943,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11100000, guid: 62824d16983629e4190869cb1c9884b5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 62824d16983629e4190869cb1c9884b5, type: 3}
   m_IsPrefabAsset: 0
 --- !u!1001 &1838733386

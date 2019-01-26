@@ -6,10 +6,12 @@ public class BasicMove : MonoBehaviour
 {
 
     public float speed = 5;
+    public float initialSpeed;
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+    {
+        initialSpeed = speed;
 	}
 
     // Update is called once per frame

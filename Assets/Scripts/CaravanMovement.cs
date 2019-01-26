@@ -51,8 +51,6 @@ public class CaravanMovement : MonoBehaviour
         Vector3 position = this.transform.position;
 
         position.x = Mathf.Lerp(this.transform.position.x, tempPos.x, interpolation);
-        //position.y = Mathf.Lerp(this.transform.position.y, tempPos + offset.y, interpolation);
-        //position.z = Mathf.Lerp(this.transform.position.z, tempPos.z, interpolation);
 
         this.transform.position = position;
 

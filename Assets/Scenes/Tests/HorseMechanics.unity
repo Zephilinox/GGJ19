@@ -387,7 +387,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 170076733}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 18.06, y: 3, z: 4.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1003,8 +1003,9 @@ MonoBehaviour:
   leftJoyDeadZone: 0.1
   moveSpeedX: 30
   moveSpeedY: 30
-  initialMoveY: 0
+  maxDistFromWagon: 15
   playerNum: 2
+  initialMoveY: 0
 --- !u!54 &372303864
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1048,7 +1049,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 372303862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.07, y: 0.2, z: 1.8}
+  m_LocalPosition: {x: 1, y: 0.2, z: 1.8}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 1607699153}
@@ -1336,8 +1337,9 @@ MonoBehaviour:
   leftJoyDeadZone: 0.1
   moveSpeedX: 30
   moveSpeedY: 30
-  initialMoveY: 0
+  maxDistFromWagon: 15
   playerNum: 4
+  initialMoveY: 0
 --- !u!54 &448242338
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1381,7 +1383,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 448242336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.87, y: 0.2, z: 1.8}
+  m_LocalPosition: {x: -3, y: 0.2, z: 1.8}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 995863929}
@@ -21247,7 +21249,7 @@ Transform:
   m_Children:
   - {fileID: 950486848}
   m_Father: {fileID: 307559941}
-  m_RootOrder: 8
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &898488844
 MonoBehaviour:
@@ -21434,12 +21436,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 907443959}
-  m_LocalRotation: {x: -0.012371413, y: -0.7105221, z: -0.012495697, w: 0.70345515}
+  m_LocalRotation: {x: -0.014523881, y: -0.46859202, z: -0.0077052773, w: 0.8832617}
   m_LocalPosition: {x: -1.43, y: 1.641, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 307559941}
-  m_RootOrder: 9
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &907443961
 MonoBehaviour:
@@ -21495,11 +21497,11 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -7.45, y: 1.641, z: -2.472}
-  - {x: -7.4144826, y: 0.9642083, z: -1.2205384}
-  - {x: -7.4070935, y: 0.7096466, z: 0.030359812}
-  - {x: -7.439483, y: 1.0522082, z: 1.2804615}
-  - {x: -7.5, y: 1.8170002, z: 2.53}
+  - {x: 0.00000011920929, y: 1.641, z: -1.8999999}
+  - {x: 0.8052134, y: 1.1533892, z: -0.8368627}
+  - {x: 1.5780834, y: 0.9771888, z: 0.2522616}
+  - {x: 2.3052132, y: 1.2413892, z: 1.3781371}
+  - {x: 3, y: 1.8170002, z: 2.53}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -21508,7 +21510,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1.1657759
+        value: 1.1078137
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -21517,7 +21519,7 @@ LineRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 1.1657759
+        value: 1.1078137
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -21730,7 +21732,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4292103417744714, guid: 42b1032e75e0c4a4abeda76ae62382c8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4292103417744714, guid: 42b1032e75e0c4a4abeda76ae62382c8, type: 2}
       propertyPath: m_LocalPosition.y
@@ -22611,8 +22613,9 @@ MonoBehaviour:
   leftJoyDeadZone: 0.1
   moveSpeedX: 30
   moveSpeedY: 30
-  initialMoveY: 0
+  maxDistFromWagon: 15
   playerNum: 1
+  initialMoveY: 0
 --- !u!95 &1222245394
 Animator:
   serializedVersion: 3
@@ -22640,7 +22643,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222245392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5, y: 0.2, z: 1.66}
+  m_LocalPosition: {x: 3, y: 0.2, z: 1.66}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 522377533}
@@ -23048,8 +23051,8 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 574e17dbb5aefb3478c36936b74ed65c, type: 3}
-  - {fileID: 2100002, guid: 574e17dbb5aefb3478c36936b74ed65c, type: 3}
+  - {fileID: 2100000, guid: cd893e306fdbe2446afd730bb2bd8a3f, type: 2}
+  - {fileID: 2100000, guid: b52d6fefcffc0a74a844daae6de732c1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27838,7 +27841,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: facd747135973414fa001a5941b9a766, type: 2}
-  - {fileID: 2100000, guid: f7eb9bfb32608e94a8a113c4c2f8d904, type: 2}
+  - {fileID: 2100000, guid: 14bfa2d9600ce6649874802f42815486, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27977,7 +27980,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 805c11b656f8b62489f29024897214ac, type: 2}
-  - {fileID: 2100002, guid: 574e17dbb5aefb3478c36936b74ed65c, type: 3}
+  - {fileID: 2100000, guid: ecdefc871de1769499a3754047a2375c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28213,12 +28216,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1453314519}
-  m_LocalRotation: {x: -0.012445834, y: -0.46288937, z: -0.00650007, w: 0.8863049}
+  m_LocalRotation: {x: -0.0076430906, y: -0.87987936, z: -0.014160138, w: 0.47492465}
   m_LocalPosition: {x: -1.43, y: 1.641, z: 0}
   m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000005}
   m_Children: []
   m_Father: {fileID: 307559941}
-  m_RootOrder: 12
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1453314521
 MonoBehaviour:
@@ -28274,11 +28277,11 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -7.45, y: 1.641, z: -2.472}
-  - {x: -6.5005584, y: 1.1433055, z: -1.2300651}
-  - {x: -5.5830083, y: 0.96292835, z: 0.037389603}
-  - {x: -4.7105584, y: 1.2313055, z: 1.340935}
-  - {x: -3.87, y: 1.8170002, z: 2.6700003}
+  - {x: 0.00000011920929, y: 1.641, z: -1.8999999}
+  - {x: -0.69248414, y: 1.1092904, z: -0.7248038}
+  - {x: -1.4186604, y: 0.91482353, z: 0.43123928}
+  - {x: -2.1924844, y: 1.1972902, z: 1.560196}
+  - {x: -3, y: 1.8170002, z: 2.6699998}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -28287,7 +28290,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.9553371
+        value: 1.0884099
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -28296,7 +28299,7 @@ LineRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0.9553371
+        value: 1.0884099
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -33169,12 +33172,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1486391683}
-  m_LocalRotation: {x: -0.013110016, y: -0.6085197, z: -0.010055504, w: 0.79336673}
+  m_LocalRotation: {x: -0.014646425, y: -0.6268818, z: -0.011788064, w: 0.7788875}
   m_LocalPosition: {x: -1.43, y: 1.641, z: 0}
   m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000005}
   m_Children: []
   m_Father: {fileID: 307559941}
-  m_RootOrder: 10
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1486391685
 MonoBehaviour:
@@ -33230,11 +33233,11 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -7.45, y: 1.641, z: -2.472}
-  - {x: -7.0910435, y: 0.8131358, z: -1.1846062}
-  - {x: -6.740263, y: 0.4959978, z: 0.10167831}
-  - {x: -6.4010434, y: 0.90113574, z: 1.3863939}
-  - {x: -6.07, y: 1.8170002, z: 2.6700003}
+  - {x: 0.00000011920929, y: 1.641, z: -1.8999999}
+  - {x: 0.3120097, y: 1.0946422, z: -0.775565}
+  - {x: 0.5876949, y: 0.89410794, z: 0.3594521}
+  - {x: 0.81200963, y: 1.1826421, z: 1.5094348}
+  - {x: 1, y: 1.8170002, z: 2.6699998}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -33243,7 +33246,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1.1121883
+        value: 1.2197602
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -33252,7 +33255,7 @@ LineRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 1.1121883
+        value: 1.2197602
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -33735,8 +33738,9 @@ MonoBehaviour:
   leftJoyDeadZone: 0.1
   moveSpeedX: 30
   moveSpeedY: 30
-  initialMoveY: 0
+  maxDistFromWagon: 15
   playerNum: 3
+  initialMoveY: 0
 --- !u!54 &1627614908
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33780,7 +33784,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1627614906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.11, y: 0.2, z: 1.8}
+  m_LocalPosition: {x: -1, y: 0.2, z: 1.8}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 766153038}
@@ -39196,8 +39200,8 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 574e17dbb5aefb3478c36936b74ed65c, type: 3}
-  - {fileID: 2100002, guid: 574e17dbb5aefb3478c36936b74ed65c, type: 3}
+  - {fileID: 2100000, guid: 738e687b78350a646bf17ea9c73ec7d1, type: 2}
+  - {fileID: 2100000, guid: 04c893cb44b75a74dbfdd27a215887c7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39372,12 +39376,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1920652649}
-  m_LocalRotation: {x: -0.007899554, y: -0.8541466, z: -0.012980464, w: 0.51981014}
+  m_LocalRotation: {x: -0.011788064, y: -0.77888757, z: -0.014646425, w: 0.6268818}
   m_LocalPosition: {x: -1.43, y: 1.641, z: 0}
   m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000005}
   m_Children: []
   m_Father: {fileID: 307559941}
-  m_RootOrder: 11
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1920652651
 MonoBehaviour:
@@ -39433,11 +39437,11 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -7.45, y: 1.641, z: -2.472}
-  - {x: -8.070745, y: 0.9767807, z: -1.1635687}
-  - {x: -8.717415, y: 0.72742665, z: 0.13142967}
-  - {x: -9.400745, y: 1.0647807, z: 1.4074314}
-  - {x: -10.11, y: 1.8170002, z: 2.6700003}
+  - {x: 0.00000011920929, y: 1.641, z: -1.8999999}
+  - {x: -0.22438158, y: 0.8536996, z: -0.7471112}
+  - {x: -0.46377015, y: 0.5533637, z: 0.39969185}
+  - {x: -0.7243817, y: 0.94169956, z: 1.5378886}
+  - {x: -1, y: 1.8170002, z: 2.6699998}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -39446,7 +39450,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1.0346742
+        value: 1.2197602
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -39455,7 +39459,7 @@ LineRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 1.0346742
+        value: 1.2197602
         inSlope: 0
         outSlope: 0
         tangentMode: 0

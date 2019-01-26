@@ -34,6 +34,10 @@ public class MainMenuSelection : MonoBehaviour
                     GetComponent<Animator>().Play("MainMenu");
                     flipping = true;
                 }
+                else if (!flipping && !playSelected)
+                {
+                    Application.Quit();
+                }
             }
         }
         else
@@ -50,9 +54,11 @@ public class MainMenuSelection : MonoBehaviour
 
             if (connectedPlayers[0] && connectedPlayers[1])
             {
-                transform.GetChild(2).GetChild(4).gameObject.SetActive(true);
+                //out of bounds due to deletion below, cba
+                transform.GetChild(3).gameObject.SetActive(true);
                 if (GamePad.GetButton(GamePad.Button.Start, GamePad.Index.Any))
                 {
+                    Destroy(transform.GetChild(3).gameObject);
                     Debug.Log(flipping);
                     if (!flipping)
                     {

@@ -72,7 +72,7 @@ public static class GamePad
             Index.Any,
             new Dictionary<Button, KeyCode>
             {
-                {Button.A, KeyCode.A },
+                {Button.A, KeyCode.Q },
                 {Button.B, KeyCode.Mouse1},
                 {Button.Y, KeyCode.Mouse2},
                 {Button.X, KeyCode.Mouse0},
@@ -88,7 +88,7 @@ public static class GamePad
             Index.One,
             new Dictionary<Button, KeyCode>
             {
-                {Button.A, KeyCode.A },
+                {Button.A, KeyCode.Q },
                 {Button.B, KeyCode.Mouse1},
                 {Button.Y, KeyCode.Mouse2},
                 {Button.X, KeyCode.Mouse0},

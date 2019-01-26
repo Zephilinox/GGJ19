@@ -14727,8 +14727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba1a7e338201fa4b84114fb0b260e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftEOS: {fileID: 0}
-  rightEOS: {fileID: 0}
+  leftEOS: {fileID: 114041418922442826}
+  rightEOS: {fileID: 114994268723746322}
 --- !u!114 &114994268723746322
 MonoBehaviour:
   m_ObjectHideFlags: 1

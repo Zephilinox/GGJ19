@@ -53,11 +53,15 @@ public class CaravanMovement : MonoBehaviour
         position.x = Mathf.Lerp(this.transform.position.x, tempPos.x, interpolation);
 
         this.transform.position = position;
+    }
 
+    private void FixedUpdate()
+    {
         //Wagon Look At!
-        Vector3 lookAtPosition = new Vector3(avg_x, 0, avg_z);
-        Vector3 direction = lookAtPosition - position;
+        Vector3 direction = this.transform.position - previousPosition;
         Vector3 lookAtDirection = transform.InverseTransformDirection(direction);
+
+        previousPosition = this.transform.position;
 
         model.transform.localRotation = Quaternion.LookRotation(new Vector3(lookAtDirection.x, 0f, lookAtDirection.z));
     }

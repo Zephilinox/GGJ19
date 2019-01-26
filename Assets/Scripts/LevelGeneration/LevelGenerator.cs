@@ -18,7 +18,7 @@ public class LevelGenerator : MonoBehaviour
     // Use this for initialization
 	void Start ()
     {
-        currentSection = Instantiate(sections[Random.Range(0, sections.Count - 1)]);
+        currentSection = Instantiate(sections[0]);
         currentSection.transform.position = (Vector3.zero);
 
 
@@ -29,8 +29,8 @@ public class LevelGenerator : MonoBehaviour
 
     void SpawnSection()
     {
-        leftSection = Instantiate(sections[Random.Range(0, sections.Count - 1)]);
-        rightSection = Instantiate(sections[Random.Range(0, sections.Count - 1)]);
+        leftSection = Instantiate(sections[Random.Range(1, sections.Count - 1)]);
+        rightSection = Instantiate(sections[Random.Range(1, sections.Count - 1)]);
 
         leftSection.transform.position = currentSection.GetComponent<LevelScript>().leftEOS.NextSpawnPoint.transform.position;
         rightSection.transform.position = currentSection.GetComponent<LevelScript>().rightEOS.NextSpawnPoint.transform.position;

@@ -87,7 +87,7 @@ public class HorseMovement : MonoBehaviour
         || GamePad.GetAxis(GamePad.Axis.LeftStick, Player).x > leftJoyDeadZone)
         {
             GetComponent<Rigidbody>().AddForce(Vector3.right * GamePad.GetAxis(GamePad.Axis.LeftStick, Player).x * moveSpeedX);
-            angle = GamePad.GetAxis(GamePad.Axis.LeftStick, Player).x * 45;
+            angle = GamePad.GetAxis(GamePad.Axis.LeftStick, Player).x * 10;
         }
         else
         {

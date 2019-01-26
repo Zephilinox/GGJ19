@@ -10,8 +10,6 @@ public class LevelGenerator : MonoBehaviour
     private GameObject leftSection;
     private GameObject rightSection;
 
-    
-
     private bool correctDirection;  //True == right, False == left
     private int correctWay = 0; //Number of times passing through correct direction
 
@@ -20,8 +18,6 @@ public class LevelGenerator : MonoBehaviour
     {
         currentSection = Instantiate(sections[0]);
         currentSection.transform.position = (Vector3.zero);
-
-
 
         SpawnSection();
     }

@@ -96,7 +96,7 @@ public class HorseMovement : MonoBehaviour
 
         horseModel.transform.localRotation = Quaternion.Euler(0, angle, 0);
 
-        Debug.Log(angle);
+        //Debug.Log(angle);
 
         if (GamePad.GetAxis(GamePad.Axis.LeftStick, Player).y < -leftJoyDeadZone)
         {

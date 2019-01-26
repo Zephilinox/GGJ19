@@ -7,8 +7,8 @@ public class LevelGenerator : MonoBehaviour
     public List<GameObject> sections;
 
     public GameObject currentSection;
-    private GameObject leftSection;
-    private GameObject rightSection;
+    public GameObject leftSection;
+    public GameObject rightSection;
 
     private bool correctDirection;  //True == right, False == left
     private int correctWay = 0; //Number of times passing through correct direction

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CaravanBasicMove : MonoBehaviour
+public class BasicMove : MonoBehaviour
 {
 
-    public float speed = 1;
+    public float speed = 5;
 
 	// Use this for initialization
 	void Start () {

@@ -1341,6 +1341,7 @@ MonoBehaviour:
   leftJoyDeadZone: 0.1
   moveSpeedX: 30
   moveSpeedY: 30
+  playerNum: 1
 --- !u!137 &137500442232673604
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

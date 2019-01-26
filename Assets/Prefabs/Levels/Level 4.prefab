@@ -7573,6 +7573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4825013456188146}
+  - component: {fileID: 114847163908858398}
   m_Layer: 0
   m_Name: Level 4
   m_TagString: Untagged
@@ -33443,6 +33444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextSpawnPoint: {fileID: 1497215349323776}
+  isRight: 0
 --- !u!114 &114343769456791890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -33455,3 +33457,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextSpawnPoint: {fileID: 1070143118611548}
+  isRight: 1
+--- !u!114 &114847163908858398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816726105266730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba1a7e338201fa4b84114fb0b260e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftEOS: {fileID: 114012487624275462}
+  rightEOS: {fileID: 114343769456791890}

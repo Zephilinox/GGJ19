@@ -6,6 +6,7 @@ public class EndOfSection : MonoBehaviour
 {
     private GameObject LevelGenerator;
     public GameObject NextSpawnPoint;
+    public bool isRight;
 
     private void Start()
     {
@@ -16,7 +17,7 @@ public class EndOfSection : MonoBehaviour
     {
         if(other.tag == "Wagon")
         {
-            LevelGenerator.GetComponent<LevelGenerator>().OnSectionComplete(NextSpawnPoint);
+            LevelGenerator.GetComponent<LevelGenerator>().OnSectionComplete(NextSpawnPoint, isRight);
         }
     }
 }

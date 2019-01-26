@@ -542,6 +542,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4528211251961608}
+  - component: {fileID: 114125461346328538}
   m_Layer: 0
   m_Name: Level 5
   m_TagString: Untagged
@@ -27234,7 +27235,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: e99d53138a6c5d14fb0f219cefd76c00, type: 2}
+  - {fileID: 2100000, guid: 5f053f208bbc2b94f9111a4ddad027de, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -40024,6 +40025,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &114125461346328538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1041542817034492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba1a7e338201fa4b84114fb0b260e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftEOS: {fileID: 114865992019947742}
+  rightEOS: {fileID: 114665160762538474}
 --- !u!114 &114665160762538474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -40036,6 +40050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextSpawnPoint: {fileID: 1906003928689712}
+  isRight: 0
 --- !u!114 &114865992019947742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -40048,6 +40063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextSpawnPoint: {fileID: 1223821046586118}
+  isRight: 0
 --- !u!154 &154843020282890376
 TerrainCollider:
   m_ObjectHideFlags: 1
@@ -40074,7 +40090,7 @@ Terrain:
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
+  m_SplatMapDistance: 100
   m_HeightmapMaximumLOD: 0
   m_CastShadows: 1
   m_DrawHeightmap: 1

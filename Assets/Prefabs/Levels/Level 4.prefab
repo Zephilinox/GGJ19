@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 65312423308677882}
   m_Layer: 0
   m_Name: Plant_1_01 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 65171392436204976}
   m_Layer: 0
   m_Name: House_Standard_04
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 65417111041850122}
   m_Layer: 0
   m_Name: Barrel (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 65561907632122412}
   m_Layer: 0
   m_Name: Fence_03 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 65391067770107054}
   m_Layer: 0
   m_Name: Plant_3_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -372,7 +372,7 @@ GameObject:
   - component: {fileID: 65120341318102118}
   m_Layer: 0
   m_Name: Barrel (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 65543176509196528}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 65827044519017894}
   m_Layer: 0
   m_Name: Barrel (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 65300608448814526}
   m_Layer: 0
   m_Name: Box_Simple (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -967,7 +967,7 @@ GameObject:
   - component: {fileID: 65793613904499258}
   m_Layer: 0
   m_Name: Fence_03 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1000,7 +1000,7 @@ GameObject:
   - component: {fileID: 65658356481524826}
   m_Layer: 0
   m_Name: Plant_3_01 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1230,7 +1230,7 @@ GameObject:
   - component: {fileID: 4242702509175928}
   m_Layer: 0
   m_Name: Campfire
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1245,7 +1245,7 @@ GameObject:
   - component: {fileID: 4912526419043202}
   m_Layer: 0
   m_Name: Tall_Rock_1_01 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1375,7 +1375,7 @@ GameObject:
   - component: {fileID: 4209286776897682}
   m_Layer: 0
   m_Name: Rock_6_01 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1722,7 +1722,7 @@ GameObject:
   - component: {fileID: 65970466604487440}
   m_Layer: 0
   m_Name: Barrel (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1866,7 +1866,7 @@ GameObject:
   - component: {fileID: 65525345727026936}
   m_Layer: 0
   m_Name: Bank
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1932,7 +1932,7 @@ GameObject:
   - component: {fileID: 65950886452413482}
   m_Layer: 0
   m_Name: House_Standard_01 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2032,7 +2032,7 @@ GameObject:
   - component: {fileID: 65605143375986734}
   m_Layer: 0
   m_Name: Saloon
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2168,7 +2168,7 @@ GameObject:
   - component: {fileID: 65735039629356274}
   m_Layer: 0
   m_Name: Mesh1_Fallen_Trunk_Model
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2200,7 +2200,7 @@ GameObject:
   - component: {fileID: 4372371214094402}
   m_Layer: 0
   m_Name: Rock_6_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2380,7 +2380,7 @@ GameObject:
   - component: {fileID: 65864175713491896}
   m_Layer: 0
   m_Name: Church
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2395,7 +2395,7 @@ GameObject:
   - component: {fileID: 4406631215793324}
   m_Layer: 0
   m_Name: Tall_Rock_1_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2425,7 +2425,7 @@ GameObject:
   - component: {fileID: 4035205699006808}
   m_Layer: 0
   m_Name: Rock_2_01 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2440,7 +2440,7 @@ GameObject:
   - component: {fileID: 4250854445604728}
   m_Layer: 0
   m_Name: Rock_4_01 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2575,7 +2575,7 @@ GameObject:
   - component: {fileID: 65362672654598956}
   m_Layer: 0
   m_Name: Box_Simple (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2773,7 +2773,7 @@ GameObject:
   - component: {fileID: 65078346990282568}
   m_Layer: 0
   m_Name: Plant_2_01 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2826,7 +2826,7 @@ GameObject:
   - component: {fileID: 65515552657144276}
   m_Layer: 0
   m_Name: House_Standard_04 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2991,7 +2991,7 @@ GameObject:
   - component: {fileID: 65129706605873168}
   m_Layer: 0
   m_Name: Tree
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3042,7 +3042,7 @@ GameObject:
   - component: {fileID: 65612725116042378}
   m_Layer: 0
   m_Name: Fence_03
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3197,7 +3197,7 @@ GameObject:
   - component: {fileID: 65977414463518630}
   m_Layer: 0
   m_Name: Barrel (13)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3252,7 +3252,7 @@ GameObject:
   - component: {fileID: 65097738182420446}
   m_Layer: 0
   m_Name: Fence_02 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3287,7 +3287,7 @@ GameObject:
   - component: {fileID: 65039185694961230}
   m_Layer: 0
   m_Name: Mine_Entrance (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3335,7 +3335,7 @@ GameObject:
   - component: {fileID: 65657152381998184}
   m_Layer: 0
   m_Name: Plant_1_01 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3501,7 +3501,7 @@ GameObject:
   - component: {fileID: 4815643669930122}
   m_Layer: 0
   m_Name: Rock_3_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3519,7 +3519,7 @@ GameObject:
   - component: {fileID: 65015221282541644}
   m_Layer: 0
   m_Name: Box_Simple (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3697,7 +3697,7 @@ GameObject:
   - component: {fileID: 65245618219295752}
   m_Layer: 0
   m_Name: Plant_2_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3731,7 +3731,7 @@ GameObject:
   - component: {fileID: 65622744310146374}
   m_Layer: 0
   m_Name: Plant_1_01 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3899,7 +3899,7 @@ GameObject:
   - component: {fileID: 65473307810058996}
   m_Layer: 0
   m_Name: Barn_02 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3934,7 +3934,7 @@ GameObject:
   - component: {fileID: 65583929756117638}
   m_Layer: 0
   m_Name: Chapel
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4058,7 +4058,7 @@ GameObject:
   - component: {fileID: 4127549355210066}
   m_Layer: 0
   m_Name: Fallen_Trunk_01 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4076,7 +4076,7 @@ GameObject:
   - component: {fileID: 65389077248720712}
   m_Layer: 0
   m_Name: Bank (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4130,7 +4130,7 @@ GameObject:
   - component: {fileID: 65074551367706444}
   m_Layer: 0
   m_Name: Box_Simple (12)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4148,7 +4148,7 @@ GameObject:
   - component: {fileID: 65128152249460990}
   m_Layer: 0
   m_Name: Box_Simple
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4178,7 +4178,7 @@ GameObject:
   - component: {fileID: 4433537488476524}
   m_Layer: 0
   m_Name: Rock_1_01 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4197,7 +4197,7 @@ GameObject:
   - component: {fileID: 65086694714980494}
   m_Layer: 0
   m_Name: Fence_03 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4331,7 +4331,7 @@ GameObject:
   - component: {fileID: 65112629163249460}
   m_Layer: 0
   m_Name: Plant_2_01 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4394,7 +4394,7 @@ GameObject:
   - component: {fileID: 65943579544304036}
   m_Layer: 0
   m_Name: Plant_3_01 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4456,7 +4456,7 @@ GameObject:
   - component: {fileID: 4984023858258070}
   m_Layer: 0
   m_Name: Rock_5_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4491,7 +4491,7 @@ GameObject:
   - component: {fileID: 65439777351527084}
   m_Layer: 0
   m_Name: Barrel (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4740,7 +4740,7 @@ GameObject:
   - component: {fileID: 65456106128381836}
   m_Layer: 0
   m_Name: Plant_3_01 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4758,7 +4758,7 @@ GameObject:
   - component: {fileID: 65428212960837760}
   m_Layer: 0
   m_Name: Box_Simple (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4794,7 +4794,7 @@ GameObject:
   - component: {fileID: 65143162840240422}
   m_Layer: 0
   m_Name: Box_Simple (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5053,7 +5053,7 @@ GameObject:
   - component: {fileID: 65232786633899952}
   m_Layer: 0
   m_Name: Barrel (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5068,7 +5068,7 @@ GameObject:
   - component: {fileID: 4877351362875528}
   m_Layer: 0
   m_Name: Rock_1_01 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5313,7 +5313,7 @@ GameObject:
   - component: {fileID: 65917112660039572}
   m_Layer: 0
   m_Name: Plant_1_01 (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5363,7 +5363,7 @@ GameObject:
   - component: {fileID: 65578903808241748}
   m_Layer: 0
   m_Name: Box_Simple (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5545,7 +5545,7 @@ GameObject:
   - component: {fileID: 4119789596094792}
   m_Layer: 0
   m_Name: Fallen_Trunk_01 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5560,7 +5560,7 @@ GameObject:
   - component: {fileID: 4390138371568868}
   m_Layer: 0
   m_Name: Tall_Rock_2_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5576,7 +5576,7 @@ GameObject:
   - component: {fileID: 65918582145834504}
   m_Layer: 0
   m_Name: Plant_3_01 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5756,7 +5756,7 @@ GameObject:
   - component: {fileID: 111430099929531800}
   m_Layer: 0
   m_Name: Well
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5792,7 +5792,7 @@ GameObject:
   - component: {fileID: 65819287588593500}
   m_Layer: 0
   m_Name: Box_Simple (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6022,7 +6022,7 @@ GameObject:
   - component: {fileID: 65174432015008018}
   m_Layer: 0
   m_Name: Box_Simple (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6175,7 +6175,7 @@ GameObject:
   - component: {fileID: 65234931133831482}
   m_Layer: 0
   m_Name: Box_Simple (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6190,7 +6190,7 @@ GameObject:
   - component: {fileID: 4150936587718850}
   m_Layer: 0
   m_Name: Rock_3_01 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6223,7 +6223,7 @@ GameObject:
   - component: {fileID: 65065308757837042}
   m_Layer: 0
   m_Name: Plant_2_01 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6354,7 +6354,7 @@ GameObject:
   - component: {fileID: 65107065878354870}
   m_Layer: 0
   m_Name: Coach
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6404,7 +6404,7 @@ GameObject:
   - component: {fileID: 65876767579054096}
   m_Layer: 0
   m_Name: Barrel (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6422,7 +6422,7 @@ GameObject:
   - component: {fileID: 65423884473070566}
   m_Layer: 0
   m_Name: Mine_Entrance
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6437,7 +6437,7 @@ GameObject:
   - component: {fileID: 4023059990155648}
   m_Layer: 0
   m_Name: Rock_2_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6472,7 +6472,7 @@ GameObject:
   - component: {fileID: 65778344675908174}
   m_Layer: 0
   m_Name: House_Standard_01 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6508,7 +6508,7 @@ GameObject:
   - component: {fileID: 65431267508090274}
   m_Layer: 0
   m_Name: Barrel (14)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6695,7 +6695,7 @@ GameObject:
   - component: {fileID: 65295388717648378}
   m_Layer: 0
   m_Name: Fence_03 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6710,7 +6710,7 @@ GameObject:
   - component: {fileID: 4662997052895294}
   m_Layer: 0
   m_Name: Rock_1_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6745,7 +6745,7 @@ GameObject:
   - component: {fileID: 65741461397791776}
   m_Layer: 0
   m_Name: Barrel (12)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6778,7 +6778,7 @@ GameObject:
   - component: {fileID: 65849699239501016}
   m_Layer: 0
   m_Name: House_Standard_03
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6872,7 +6872,7 @@ GameObject:
   - component: {fileID: 4491264370534634}
   m_Layer: 0
   m_Name: Tall_Rock_1_01 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6888,7 +6888,7 @@ GameObject:
   - component: {fileID: 65465589122438906}
   m_Layer: 0
   m_Name: Plant_2_01 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7000,7 +7000,7 @@ GameObject:
   - component: {fileID: 65617211720713222}
   m_Layer: 0
   m_Name: Barrel (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7065,7 +7065,7 @@ GameObject:
   - component: {fileID: 4487582606104574}
   m_Layer: 0
   m_Name: Fallen_Trunk_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7101,7 +7101,7 @@ GameObject:
   - component: {fileID: 65231771638727830}
   m_Layer: 0
   m_Name: Saloon (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7171,7 +7171,7 @@ GameObject:
   - component: {fileID: 65586141709214202}
   m_Layer: 0
   m_Name: House_Standard_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7613,7 +7613,7 @@ GameObject:
   - component: {fileID: 65423776772811956}
   m_Layer: 0
   m_Name: Tree_02
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7648,7 +7648,7 @@ GameObject:
   - component: {fileID: 65536080872005492}
   m_Layer: 0
   m_Name: Mesh1_Fallen_Trunk_Model
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7850,7 +7850,7 @@ GameObject:
   - component: {fileID: 65045142305771420}
   m_Layer: 0
   m_Name: Fence_03 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7916,7 +7916,7 @@ GameObject:
   - component: {fileID: 65308266659147492}
   m_Layer: 0
   m_Name: Plant_1_01 (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7996,7 +7996,7 @@ GameObject:
   - component: {fileID: 4641962019370442}
   m_Layer: 0
   m_Name: Rock_4_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8029,7 +8029,7 @@ GameObject:
   - component: {fileID: 111260998053701930}
   m_Layer: 0
   m_Name: Western_Wagon (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8047,7 +8047,7 @@ GameObject:
   - component: {fileID: 65607119994409962}
   m_Layer: 0
   m_Name: Tree_02 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8080,7 +8080,7 @@ GameObject:
   - component: {fileID: 65089946798053886}
   m_Layer: 0
   m_Name: Barrel (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8111,7 +8111,7 @@ GameObject:
   - component: {fileID: 65534974633695020}
   m_Layer: 0
   m_Name: Plant_2_01 (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8262,7 +8262,7 @@ GameObject:
   - component: {fileID: 65178677721951722}
   m_Layer: 0
   m_Name: Barn_02
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8357,7 +8357,7 @@ GameObject:
   - component: {fileID: 65996354607157444}
   m_Layer: 0
   m_Name: Coach (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8406,7 +8406,7 @@ GameObject:
   - component: {fileID: 65886568830527112}
   m_Layer: 0
   m_Name: Plant_2_01 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8422,7 +8422,7 @@ GameObject:
   - component: {fileID: 65817903939234488}
   m_Layer: 0
   m_Name: Plant_1_01
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8440,7 +8440,7 @@ GameObject:
   - component: {fileID: 65392635013900136}
   m_Layer: 0
   m_Name: Box_Simple (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8750,7 +8750,7 @@ GameObject:
   - component: {fileID: 65127028077841208}
   m_Layer: 0
   m_Name: Plant_3_01 (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8816,7 +8816,7 @@ GameObject:
   - component: {fileID: 65850936269309390}
   m_Layer: 0
   m_Name: Fence_03 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8832,7 +8832,7 @@ GameObject:
   - component: {fileID: 65443308430825210}
   m_Layer: 0
   m_Name: Plant_2_01 (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8882,7 +8882,7 @@ GameObject:
   - component: {fileID: 65283557164049470}
   m_Layer: 0
   m_Name: Barrel (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8932,7 +8932,7 @@ GameObject:
   - component: {fileID: 65076787904515710}
   m_Layer: 0
   m_Name: Box_Simple (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9010,7 +9010,7 @@ GameObject:
   - component: {fileID: 4102719938383950}
   m_Layer: 0
   m_Name: Rock_3_01 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9028,7 +9028,7 @@ GameObject:
   - component: {fileID: 65736535082278952}
   m_Layer: 0
   m_Name: House_Standard_02
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9366,7 +9366,7 @@ GameObject:
   - component: {fileID: 4718002994972830}
   m_Layer: 0
   m_Name: Rock_6_01 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9401,7 +9401,7 @@ GameObject:
   - component: {fileID: 65477574927414030}
   m_Layer: 0
   m_Name: Barrel (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16060,7 +16060,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1816726105266730}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 191.73009, y: 494.78934, z: 280.224}
+  m_LocalPosition: {x: 36.633743, y: 58.138176, z: -185.9918}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4131850828566552}

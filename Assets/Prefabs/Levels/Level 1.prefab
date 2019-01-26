@@ -795,6 +795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4595581792146910}
+  - component: {fileID: 114775103965076496}
   m_Layer: 0
   m_Name: Level 1
   m_TagString: Untagged
@@ -53800,6 +53801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextSpawnPoint: {fileID: 1199831886334258}
+  isRight: 0
 --- !u!114 &114508824145152810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53812,3 +53814,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextSpawnPoint: {fileID: 1691732434897824}
+  isRight: 1
+--- !u!114 &114775103965076496
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1047840182050142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba1a7e338201fa4b84114fb0b260e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftEOS: {fileID: 114196626035978512}
+  rightEOS: {fileID: 114508824145152810}

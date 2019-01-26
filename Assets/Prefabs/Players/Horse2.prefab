@@ -1416,7 +1416,7 @@ MonoBehaviour:
   maxDistFromWagon: 15
   playerNum: 2
   initialMoveY: 0
-  horseModel: {fileID: 1154953813068088}
+  horseModel: {fileID: 1152991858034736}
 --- !u!114 &114492545183603792
 MonoBehaviour:
   m_ObjectHideFlags: 1

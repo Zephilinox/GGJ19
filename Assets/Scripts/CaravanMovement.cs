@@ -27,6 +27,7 @@ public class CaravanMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        if(Horses.Count == 0) {return;}
 
         avg_x = 0;
         avg_z = 0;

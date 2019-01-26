@@ -8,11 +8,28 @@ public class MainMenuSelection : MonoBehaviour
     public bool playSelected = false;
     public bool ready = false;
     public bool flipping = false;
-    public bool[] connectedPlayers = new bool[4];
     public bool mainMenu2 = false;
+
+    public GameObject[] horses;
+    public GameObject[] lineRenders;
+
+    
+
+    //private void Start()
+    //{
+    //    horses = GameObject.FindGameObjectsWithTag("Horse");
+    //}
 
     private void Update()
     {
+        for (int i = 0; i < 4; i++)
+        {
+            horses[i].SetActive(StaticPlayerCount.connectedPlayers[i]);
+            lineRenders[i].SetActive(StaticPlayerCount.connectedPlayers[i]);
+
+
+        }
+
         if (mainMenu)
         {
             if (GamePad.GetAxis(GamePad.Axis.LeftStick, GamePad.Index.Any).x > 0.0f)
@@ -58,11 +75,12 @@ public class MainMenuSelection : MonoBehaviour
                 {
                     transform.GetChild(2).GetChild(i).GetChild(0).gameObject.SetActive(true);
                     transform.GetChild(2).GetChild(i).GetComponent<SpriteRenderer>().enabled = false;
-                    connectedPlayers[i] = true;
+                    StaticPlayerCount.connectedPlayers[i] = true;
+
                 }
             }
 
-            if (!mainMenu2 && connectedPlayers[0] && connectedPlayers[1])
+            if (!mainMenu2 && StaticPlayerCount.connectedPlayers[0] && StaticPlayerCount.connectedPlayers[1])
             {
                 //out of bounds due to deletion below, cba
                 if (transform.childCount > 3)
@@ -70,12 +88,23 @@ public class MainMenuSelection : MonoBehaviour
                     transform.GetChild(3).gameObject.SetActive(true);
                     if (GamePad.GetButton(GamePad.Button.Start, GamePad.Index.Any))
                     {
+                        Camera.main.GetComponent<CameraMovement>().enabled = true;
+
                         Destroy(transform.GetChild(3).gameObject);
-                        Debug.Log(flipping);
                         if (!flipping)
                         {
                             GetComponent<Animator>().Play("MainMenu");
                             flipping = true;
+
+                            foreach(GameObject horse in horses)
+                            {
+                                horse.GetComponent<BasicMove>().enabled = true;
+                                GameObject.FindGameObjectWithTag("Wagon").GetComponent<BasicMove>().enabled = true;
+                                if (horse.activeSelf)
+                                {
+                                    GameObject.FindGameObjectWithTag("Wagon").GetComponent<CaravanMovement>().Horses.Add(horse);
+                                }
+                            }
                         }
                     }
                 }
@@ -100,10 +129,14 @@ public class MainMenuSelection : MonoBehaviour
             {
                 transform.GetChild(2).GetChild(i).GetChild(0).gameObject.SetActive(false);
                 transform.GetChild(2).GetChild(i).GetComponent<SpriteRenderer>().enabled = true;
-                connectedPlayers[i] = false;
+                StaticPlayerCount.connectedPlayers[i] = false;
             }
 
             transform.GetChild(3).gameObject.SetActive(false);
+
+
+
+
             return;
         }
             

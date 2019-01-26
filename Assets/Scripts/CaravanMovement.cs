@@ -56,6 +56,7 @@ public class CaravanMovement : MonoBehaviour
 
         this.transform.position = position;
 
+        //Wagon Look At!
         Vector3 lookAtPosition = new Vector3(avg_x, 0, avg_z);
         Vector3 direction = lookAtPosition - position;
         Vector3 lookAtDirection = transform.InverseTransformDirection(direction);

@@ -9,6 +9,7 @@ public class MainMenuSelection : MonoBehaviour
     public bool ready = false;
     public bool flipping = false;
     public bool[] connectedPlayers = new bool[4];
+    public bool mainMenu2 = false;
 
     private void Update()
     {
@@ -42,6 +43,14 @@ public class MainMenuSelection : MonoBehaviour
         }
         else
         {
+            if (GamePad.GetButton(GamePad.Button.B, GamePad.Index.Any))
+            {
+                GetComponent<Animator>().Play("MainMenu");
+                flipping = true;
+                mainMenu2 = true;
+                return;
+            }
+
             for (int i = 0; i < 4; ++i)
             {
                 if (GamePad.GetButton(GamePad.Button.A, GamePad.Index.One + i))
@@ -74,14 +83,35 @@ public class MainMenuSelection : MonoBehaviour
     {
         flipping = false;
 
+        if (mainMenu2)
+        {
+            mainMenu = true;
+            mainMenu2 = false;
+
+            transform.GetChild(0).gameObject.SetActive(true);
+            transform.GetChild(1).gameObject.SetActive(true);
+            transform.GetChild(2).gameObject.SetActive(false);
+
+            for (int i = 0; i < 4; ++i)
+            {
+                transform.GetChild(2).GetChild(i).GetChild(0).gameObject.SetActive(false);
+                transform.GetChild(2).GetChild(i).GetComponent<SpriteRenderer>().enabled = true;
+                connectedPlayers[i] = false;
+            }
+
+            transform.GetChild(3).gameObject.SetActive(false);
+            return;
+        }
+            
         if (mainMenu)
         {
             mainMenu = false;
+            mainMenu2 = false;
             transform.GetChild(0).gameObject.SetActive(false);
             transform.GetChild(1).gameObject.SetActive(false);
             transform.GetChild(2).gameObject.SetActive(true);
         }
-        else
+        else if (!mainMenu)
         {
             ready = true;
             Rigidbody rg = gameObject.AddComponent<Rigidbody>();

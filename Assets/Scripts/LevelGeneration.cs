@@ -34,7 +34,7 @@ public class LevelGeneration : MonoBehaviour
     void BuildRecursive(Section Parent, Section section, int depth)
     {
         //Create branches if depth is less than 7
-        if (depth < 5)
+        if (depth < 2)
         {
             section.branch1 = new Section();
             section.branch2 = new Section();

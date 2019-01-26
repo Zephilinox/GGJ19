@@ -15,7 +15,7 @@ public class EndOfSection : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Wagon")
+        if(other.tag == "Wagon" && other.isTrigger == false)
         {
             LevelGenerator.GetComponent<LevelGenerator>().OnSectionComplete(NextSpawnPoint, isRight);
         }

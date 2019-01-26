@@ -9,6 +9,7 @@ public class LevelGenerator : MonoBehaviour
     public GameObject currentSection;
     private GameObject leftSection;
     private GameObject rightSection;
+    private bool correctDirection;
 
     // Use this for initialization
 	void Start ()

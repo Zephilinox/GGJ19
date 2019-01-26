@@ -5,14 +5,23 @@ using UnityEngine;
 public class HorseMovement : MonoBehaviour
 {
     public float leftJoyDeadZone = 0.1f;
-    public float moveSpeedX = 0.5f;
-    public float moveSpeedY = 0.5f;
-
+    public float moveSpeedX = 30f;
+    public float moveSpeedY = 30f;
+    public float maxDistFromWagon = 15;
     public int playerNum;
+    [HideInInspector] public float initialMoveY;
+    private bool canMoveForward;
+
     GamePad.Index Player;
+    GameObject wagon;
+
 
     private void Start()
     {
+        wagon = GameObject.FindGameObjectWithTag("Wagon");
+
+        initialMoveY = moveSpeedY;
+
         switch(playerNum)
         {
             case 1:
@@ -32,24 +41,61 @@ public class HorseMovement : MonoBehaviour
 
     void Update()
     {
-        if (GamePad.GetAxis(GamePad.Axis.LeftStick, Player).x < -leftJoyDeadZone
-            || GamePad.GetAxis(GamePad.Axis.LeftStick, Player).x > leftJoyDeadZone)
+
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if(collision.gameObject.tag == "Horse")
         {
-            //Vector3 tempMovement = this.transform.position;
-            //tempMovement.x += GamePad.GetAxis(GamePad.Axis.LeftStick, GamePad.Index.Four).x * movementSpeed;
-            //this.transform.position = tempMovement;
+            //GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            GetComponent<BasicMove>().speed = 0;
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Horse")
+        {
+            //GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            GetComponent<BasicMove>().speed = GetComponent<BasicMove>().initialSpeed;
+            ;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        JoystickMovement();
+    }
+
+
+    void JoystickMovement()
+    {
+
+
+        if(Vector3.Distance(wagon.transform.position, transform.position) >= maxDistFromWagon)
+        {
+            canMoveForward = false;
+        }
+        else
+        {
+            canMoveForward = true;
+        }
+
+        if (GamePad.GetAxis(GamePad.Axis.LeftStick, Player).x < -leftJoyDeadZone
+        || GamePad.GetAxis(GamePad.Axis.LeftStick, Player).x > leftJoyDeadZone)
+        {
             GetComponent<Rigidbody>().AddForce(Vector3.right * GamePad.GetAxis(GamePad.Axis.LeftStick, Player).x * moveSpeedX);
 
         }
-        if (GamePad.GetAxis(GamePad.Axis.LeftStick, Player).y < -leftJoyDeadZone
-            || GamePad.GetAxis(GamePad.Axis.LeftStick, Player).y > leftJoyDeadZone)
+        if (GamePad.GetAxis(GamePad.Axis.LeftStick, Player).y < -leftJoyDeadZone)
         {
             GetComponent<Rigidbody>().AddForce(Vector3.forward * GamePad.GetAxis(GamePad.Axis.LeftStick, Player).y * moveSpeedY);
-
-            //Vector3 tempMovement = this.transform.position;
-            //tempMovement.z += GamePad.GetAxis(GamePad.Axis.LeftStick, GamePad.Index.Four).y * movementSpeed;
-            //this.transform.position = tempMovement;
         }
-
+        if(GamePad.GetAxis(GamePad.Axis.LeftStick, Player).y > leftJoyDeadZone && canMoveForward)
+        {
+            GetComponent<Rigidbody>().AddForce(Vector3.forward * GamePad.GetAxis(GamePad.Axis.LeftStick, Player).y * moveSpeedY);
+        }
     }
+
+
 }

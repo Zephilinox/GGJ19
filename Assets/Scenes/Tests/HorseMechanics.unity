@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.45082444, g: 0.5007424, b: 0.5746972, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -118,72 +118,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4795334949566272, guid: 2d1311c6df220e741bb7606913ed5141,
     type: 2}
   m_PrefabInternal: {fileID: 242462443}
---- !u!1 &170076733
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 170076735}
-  - component: {fileID: 170076734}
-  m_Layer: 0
-  m_Name: Directional Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &170076734
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 170076733}
-  m_Enabled: 1
-  serializedVersion: 8
-  m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 2
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &170076735
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 170076733}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 18.06, y: 3, z: 4.03}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &242462443
 Prefab:
   m_ObjectHideFlags: 0
@@ -610,9 +544,9 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0.00000011920929, y: 1.641, z: -1.8999999}
-  - {x: 0.7606641, y: 0.80702966, z: -0.7929333}
-  - {x: 1.5150813, y: 0.48736238, z: 0.3143871}
-  - {x: 2.260664, y: 0.8950296, z: 1.4220665}
+  - {x: 0.7690889, y: 0.82872593, z: -0.7995006}
+  - {x: 1.5269958, y: 0.51804554, z: 0.3050996}
+  - {x: 2.2690887, y: 0.9167259, z: 1.4154992}
   - {x: 3, y: 1.8170002, z: 2.53}
   m_Parameters:
     serializedVersion: 2
@@ -677,6 +611,48 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!1001 &938677991
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4169332208276768, guid: 7594f369156fac54a9ec7f322f0326e8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -174.68495
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169332208276768, guid: 7594f369156fac54a9ec7f322f0326e8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -54.338455
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169332208276768, guid: 7594f369156fac54a9ec7f322f0326e8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -244.75331
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169332208276768, guid: 7594f369156fac54a9ec7f322f0326e8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169332208276768, guid: 7594f369156fac54a9ec7f322f0326e8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169332208276768, guid: 7594f369156fac54a9ec7f322f0326e8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169332208276768, guid: 7594f369156fac54a9ec7f322f0326e8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169332208276768, guid: 7594f369156fac54a9ec7f322f0326e8, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7594f369156fac54a9ec7f322f0326e8, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &940688763
 Prefab:
   m_ObjectHideFlags: 0
@@ -973,9 +949,9 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0.00000011920929, y: 1.641, z: -1.8999999}
-  - {x: -0.6935174, y: 1.099719, z: -0.72511345}
-  - {x: -1.4201216, y: 0.90128773, z: 0.43080136}
-  - {x: -2.1935174, y: 1.187719, z: 1.5598863}
+  - {x: -0.70394146, y: 1.0104225, z: -0.7285174}
+  - {x: -1.4348634, y: 0.7750032, z: 0.42598748}
+  - {x: -2.2039416, y: 1.0984223, z: 1.5564824}
   - {x: -3, y: 1.8170002, z: 2.6699998}
   m_Parameters:
     serializedVersion: 2
@@ -1125,9 +1101,9 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0.00000011920929, y: 1.641, z: -1.8999999}
-  - {x: 0.26516813, y: 0.81546915, z: -0.7545637}
-  - {x: 0.52145094, y: 0.49929762, z: 0.38915247}
-  - {x: 0.7651681, y: 0.9034691, z: 1.5304362}
+  - {x: 0.3127569, y: 1.1022243, z: -0.7760205}
+  - {x: 0.5887516, y: 0.9048307, z: 0.35880792}
+  - {x: 0.81275684, y: 1.1902242, z: 1.5089793}
   - {x: 1, y: 1.8170002, z: 2.6699998}
   m_Parameters:
     serializedVersion: 2
@@ -1430,9 +1406,9 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0.00000011920929, y: 1.641, z: -1.8999999}
-  - {x: -0.1869783, y: 1.0871787, z: -0.7479184}
-  - {x: -0.41087392, y: 0.8835529, z: 0.39855027}
-  - {x: -0.6869784, y: 1.1751785, z: 1.5370814}
+  - {x: -0.18951121, y: 1.06586, z: -0.7476517}
+  - {x: -0.414456, y: 0.8534038, z: 0.39892754}
+  - {x: -0.6895113, y: 1.1538599, z: 1.5373482}
   - {x: -1, y: 1.8170002, z: 2.6699998}
   m_Parameters:
     serializedVersion: 2

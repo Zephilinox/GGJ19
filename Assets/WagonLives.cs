@@ -11,12 +11,7 @@ public class WagonLives : MonoBehaviour
     [SerializeField]
     private List<GameObject> Cargo;
 
-    [SerializeField]
-    private Animator ModelAnimator;
-
     private int current_lives;
-
-    private bool invulnerable = false;
 
     void Start()
     {
@@ -33,44 +28,27 @@ public class WagonLives : MonoBehaviour
 
     public void LoseLife()
     {
-        if (!invulnerable)
+        current_lives--;
+        if (current_lives == 0)
         {
-            invulnerable = true;
-            current_lives--;
+            GetComponent<BasicMove>().speed = 1;
+            StartCoroutine(LoseCargo(1.0f));
 
-            if (current_lives == 0)
-            {
-                GetComponent<BasicMove>().speed = 1;
-                StartCoroutine(LoseCargo(1.0f));
-            }
-            else if (current_lives > 0)
-            {
-                StartCoroutine(LoseCargo(2.0f));
-                ModelAnimator.SetTrigger("invulnerability");
-            }
+        }
+        else
+        {
+            StartCoroutine(LoseCargo(2.0f));
         }
     }
 
     IEnumerator LoseCargo(float delay)
     {
-        
         yield return new WaitForSeconds(delay);
 
+        Debug.Log(current_lives);
         GameObject Object = Cargo[current_lives];
 
         Object.transform.parent = null;
         Object.GetComponent<Rigidbody>().isKinematic = false;
-
-        yield return new WaitForSeconds(3f);
-        invulnerable = false;
-    }
-
-    private void OnTriggerEnter(Collider collider)
-    {
-        if (collider.CompareTag("Obstacle"))
-        {
-            LoseLife();
-            Debug.Log(collider.gameObject.name);
-        }
     }
 }

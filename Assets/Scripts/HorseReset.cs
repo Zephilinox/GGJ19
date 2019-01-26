@@ -33,7 +33,6 @@ public class HorseReset : MonoBehaviour
         other.GetComponent<BasicMove>().speed = other.GetComponent<BasicMove>().initialSpeed;
         other.transform.position = GameObject.FindGameObjectWithTag("Wagon").transform.position + new Vector3(0,0,5);
         other.GetComponent<HorseMovement>().moveSpeedY = other.GetComponent<HorseMovement>().initialMoveY;
-        other.GetComponent<HorseMovement>().deathCount++;
 
     }
 }

@@ -11,7 +11,6 @@ public class HorseMovement : MonoBehaviour
     public int playerNum;
     [HideInInspector] public float initialMoveY;
     private bool canMoveForward;
-    public int deathCount;
 
     GamePad.Index Player;
     GameObject wagon;
@@ -96,6 +95,8 @@ public class HorseMovement : MonoBehaviour
         }
 
         horseModel.transform.localRotation = Quaternion.Euler(0, angle, 0);
+
+        Debug.Log(angle);
 
         if (GamePad.GetAxis(GamePad.Axis.LeftStick, Player).y < -leftJoyDeadZone)
         {

@@ -484,11 +484,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4229961917271234, guid: 3eb39e8db735ea743860dfb60347e905, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4516618512780828, guid: 3eb39e8db735ea743860dfb60347e905, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4706835143549008, guid: 3eb39e8db735ea743860dfb60347e905, type: 2}
       propertyPath: m_RootOrder

@@ -14741,4 +14741,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextSpawnPoint: {fileID: 1774697657062454}
-  isRight: 0
+  isRight: 1

@@ -51,4 +51,13 @@ public class WagonLives : MonoBehaviour
         Object.transform.parent = null;
         Object.GetComponent<Rigidbody>().isKinematic = false;
     }
+
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.CompareTag("Obstacle"))
+        {
+            LoseLife();
+            Debug.Log(collider.gameObject.name);
+        }
+    }
 }

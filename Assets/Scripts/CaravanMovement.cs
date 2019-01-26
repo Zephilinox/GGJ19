@@ -55,7 +55,7 @@ public class CaravanMovement : MonoBehaviour
         this.transform.position = position;
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
         //Wagon Look At!
         Vector3 direction = this.transform.position - previousPosition;

@@ -7,6 +7,7 @@ TagManager:
   - Horse
   - LevelGenerator
   - Wagon
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
+  - Backstop
+  - Horse
   - 
   - 
   - 

@@ -8,6 +8,7 @@ public class MainMenuSelection : MonoBehaviour
     public bool playSelected = false;
     public bool ready = false;
     public bool flipping = false;
+    public bool[] connectedPlayers = new bool[4];
 
     private void Update()
     {
@@ -35,6 +36,32 @@ public class MainMenuSelection : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            for (int i = 0; i < 4; ++i)
+            {
+                if (GamePad.GetButton(GamePad.Button.A, GamePad.Index.One + i))
+                {
+                    transform.GetChild(2).GetChild(i).GetChild(0).gameObject.SetActive(true);
+                    transform.GetChild(2).GetChild(i).GetComponent<SpriteRenderer>().enabled = false;
+                    connectedPlayers[i] = true;
+                }
+            }
+
+            if (connectedPlayers[0] && connectedPlayers[1])
+            {
+                transform.GetChild(2).GetChild(4).gameObject.SetActive(true);
+                if (GamePad.GetButton(GamePad.Button.Start, GamePad.Index.Any))
+                {
+                    Debug.Log(flipping);
+                    if (!flipping)
+                    {
+                        GetComponent<Animator>().Play("MainMenu");
+                        flipping = true;
+                    }
+                }
+            }
+        }
     }
 
     public void SignFlipComplete()
@@ -51,6 +78,10 @@ public class MainMenuSelection : MonoBehaviour
         else
         {
             ready = true;
+            Rigidbody rg = gameObject.AddComponent<Rigidbody>();
+            //rg.AddForce(Random.Range(-100, 100), Random.Range(-100, 100), Random.Range(-100, 100), ForceMode.Impulse);
+            //rg.AddTorque(Random.Range(-1000, 1000), Random.Range(-1000, 1000), Random.Range(-1000, 1000), ForceMode.Impulse);
+            Destroy(gameObject, 3);
         }
     }
 }

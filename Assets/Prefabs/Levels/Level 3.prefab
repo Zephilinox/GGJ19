@@ -9186,6 +9186,7 @@ GameObject:
   - component: {fileID: 4117569439681672}
   - component: {fileID: 33503607526193774}
   - component: {fileID: 23261910724125294}
+  - component: {fileID: 65009188851172206}
   m_Layer: 0
   m_Name: Bridge (1)
   m_TagString: Untagged
@@ -13440,6 +13441,7 @@ GameObject:
   - component: {fileID: 4112532737762150}
   - component: {fileID: 33846277859747546}
   - component: {fileID: 23795782647723660}
+  - component: {fileID: 65426529331215210}
   m_Layer: 0
   m_Name: Bridge
   m_TagString: Untagged
@@ -28558,7 +28560,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1493767176690118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 371.4, y: 9.66098, z: 15.4}
+  m_LocalPosition: {x: 130.31752, y: 66.25084, z: -133.70177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4721887426214338}
@@ -52944,6 +52946,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.4894495, y: 5.505, z: 6.39}
   m_Center: {x: 0, y: 2.7475, z: 0}
+--- !u!65 &65009188851172206
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561198586016852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.530387, y: 8.035469, z: 8.591632}
+  m_Center: {x: 0, y: -2.0070477, z: 3.2341852}
 --- !u!65 &65011791287736022
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -54720,6 +54734,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: -0.5, y: 0.3, z: -0.5}
+--- !u!65 &65426529331215210
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1823945266794444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.530387, y: 8.035469, z: 8.591632}
+  m_Center: {x: 0, y: -2.0070477, z: 3.2341852}
 --- !u!65 &65433369991584358
 BoxCollider:
   m_ObjectHideFlags: 1

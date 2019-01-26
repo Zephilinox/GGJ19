@@ -90,6 +90,10 @@ public class MainMenuSelection : MonoBehaviour
                     {
                         Camera.main.GetComponent<CameraMovement>().enabled = true;
 
+                        AudioManager.instance.Play("CartWheelMoving");
+                        AudioManager.instance.Play("GallopingFullSpeed");
+                        AudioManager.instance.Play("Wind");
+
                         Destroy(transform.GetChild(3).gameObject);
                         if (!flipping)
                         {

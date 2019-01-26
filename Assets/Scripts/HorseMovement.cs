@@ -14,6 +14,7 @@ public class HorseMovement : MonoBehaviour
 
     GamePad.Index Player;
     GameObject wagon;
+    [SerializeField] GameObject horseModel;
 
 
     private void Start()
@@ -71,7 +72,6 @@ public class HorseMovement : MonoBehaviour
     void JoystickMovement()
     {
 
-
         if(Vector3.Distance(wagon.transform.position, transform.position) >= maxDistFromWagon)
         {
             canMoveForward = false;
@@ -81,12 +81,23 @@ public class HorseMovement : MonoBehaviour
             canMoveForward = true;
         }
 
+        float angle;
+
         if (GamePad.GetAxis(GamePad.Axis.LeftStick, Player).x < -leftJoyDeadZone
         || GamePad.GetAxis(GamePad.Axis.LeftStick, Player).x > leftJoyDeadZone)
         {
             GetComponent<Rigidbody>().AddForce(Vector3.right * GamePad.GetAxis(GamePad.Axis.LeftStick, Player).x * moveSpeedX);
-
+            angle = GamePad.GetAxis(GamePad.Axis.LeftStick, Player).x * 45;
         }
+        else
+        {
+            angle = 0;
+        }
+
+        horseModel.transform.localRotation = Quaternion.Euler(0, angle, 0);
+
+        Debug.Log(angle);
+
         if (GamePad.GetAxis(GamePad.Axis.LeftStick, Player).y < -leftJoyDeadZone)
         {
             GetComponent<Rigidbody>().AddForce(Vector3.forward * GamePad.GetAxis(GamePad.Axis.LeftStick, Player).y * moveSpeedY);

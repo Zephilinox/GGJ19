@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: db1552bf73af6294bac4422e73042b2f
-timeCreated: 1501727515
+guid: e482b39d7ed22034ca6a61dd145ee82b
+timeCreated: 1501808854
 licenseType: Store
 ModelImporter:
   serializedVersion: 19
@@ -9,8 +9,8 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: RG_Terrain-Mesh001
-    4300002: RG_Terrain-Mesh-01
+    4300000: RG_Cloud01
+    4300002: RG_Cloud-01
   materials:
     importMaterials: 1
     materialName: 0

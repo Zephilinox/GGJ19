@@ -48,6 +48,7 @@ public class MainMenuSelection : MonoBehaviour
                 GetComponent<Animator>().Play("MainMenu");
                 flipping = true;
                 mainMenu2 = true;
+                transform.GetChild(3).gameObject.SetActive(false);
                 return;
             }
 
@@ -61,18 +62,21 @@ public class MainMenuSelection : MonoBehaviour
                 }
             }
 
-            if (connectedPlayers[0] && connectedPlayers[1])
+            if (!mainMenu2 && connectedPlayers[0] && connectedPlayers[1])
             {
                 //out of bounds due to deletion below, cba
-                transform.GetChild(3).gameObject.SetActive(true);
-                if (GamePad.GetButton(GamePad.Button.Start, GamePad.Index.Any))
+                if (transform.childCount > 3)
                 {
-                    Destroy(transform.GetChild(3).gameObject);
-                    Debug.Log(flipping);
-                    if (!flipping)
+                    transform.GetChild(3).gameObject.SetActive(true);
+                    if (GamePad.GetButton(GamePad.Button.Start, GamePad.Index.Any))
                     {
-                        GetComponent<Animator>().Play("MainMenu");
-                        flipping = true;
+                        Destroy(transform.GetChild(3).gameObject);
+                        Debug.Log(flipping);
+                        if (!flipping)
+                        {
+                            GetComponent<Animator>().Play("MainMenu");
+                            flipping = true;
+                        }
                     }
                 }
             }

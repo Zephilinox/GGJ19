@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Remoting.Messaging;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class WagonLives : MonoBehaviour
 {
@@ -15,15 +16,13 @@ public class WagonLives : MonoBehaviour
     [SerializeField]
     private Animator ModelAnimator;
 
-    private int current_lives;
+    public int current_lives;
 
     private bool invulnerable = false;
 
     void Start()
     {
         current_lives = max_lives;
-
-        
     }
 
     void Update()
@@ -44,13 +43,13 @@ public class WagonLives : MonoBehaviour
             if (current_lives <= 0)
             {
                 GetComponent<BasicMove>().enabled = false;
-                
+
                 GameObject caravan = GameObject.FindGameObjectWithTag("Wagon");
                 GameObject[] horses = GameObject.FindGameObjectsWithTag("Horse");
 
                 caravan.GetComponent<CaravanMovement>().canMove = false;
 
-                foreach(GameObject horse in horses)
+                foreach (GameObject horse in horses)
                 {
                     horse.GetComponent<BasicMove>().enabled = false;
                 }
@@ -73,7 +72,25 @@ public class WagonLives : MonoBehaviour
 
         Debug.Log("Fucking work");
 
-        yield return new WaitForSeconds(delay);
+        if (current_lives > 0)
+        {
+            yield return new WaitForSeconds(delay);
+        }
+        else
+        {
+            float curTime = Time.time;
+            float time = curTime + 1;
+            Image img = GameObject.Find("Canvas").transform.GetChild(0).GetComponent<Image>();
+            while (curTime < time)
+            {
+                yield return null;
+                curTime = Time.time;
+                Color c = img.color;
+                c.a = Mathf.Lerp(0, 1, 1 - (time - curTime));
+                img.color = c;
+            }
+        }
+
         invulnerable = false;
 
         Debug.Log("Fucking work");

@@ -69,6 +69,7 @@ public class WagonLives : MonoBehaviour
 
     IEnumerator GameOver()
     {
+        yield return new WaitForSeconds(3f);
         graveyard.SetActive(true);
 
         yield return null;

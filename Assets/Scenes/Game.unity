@@ -974,7 +974,7 @@ MonoBehaviour:
   - {fileID: 1096780409595742, guid: 670796bbe27ccdc4c980b368c93b6e36, type: 2}
   currentSection: {fileID: 0}
   gameManager: {fileID: 1999150962}
-  winCon: 4
+  winCon: 6
   correctWay: 0
 --- !u!4 &812669583
 Transform:
@@ -1761,6 +1761,12 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: CartWheel2
     clip: {fileID: 8300000, guid: 88515d51eead83e4ea1a41b5a157d5b7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: DeathMusic
+    clip: {fileID: 8300000, guid: 6d1e12caa49748d4aa95dec6c201df89, type: 3}
     volume: 1
     pitch: 1
     loop: 1

@@ -69,6 +69,10 @@ public class WagonLives : MonoBehaviour
 
     IEnumerator GameOver()
     {
+        AudioManager.instance.ToggleMusic();
+        AudioManager.instance.StopAll();
+        AudioManager.instance.Play("WoodCrash");
+        AudioManager.instance.Play("DeathMusic");
         yield return new WaitForSeconds(3f);
         graveyard.SetActive(true);
 
@@ -78,7 +82,7 @@ public class WagonLives : MonoBehaviour
     IEnumerator LoseCargo(float delay)
     {
         GameObject Object = Cargo[current_lives];
-        AudioManager.instance.Play("WoodCrash");
+
 
         Object.transform.parent = null;
         Object.GetComponent<Rigidbody>().isKinematic = false;

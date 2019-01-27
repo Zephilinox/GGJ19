@@ -78,7 +78,7 @@ public class Camera2 : MonoBehaviour
         transform.position = startPos + offset;
 
         GameObject[] horses = GameObject.FindGameObjectsWithTag("Horse");
-        if (shakeCount == horses.Length)
+        if (shakeCount == horses.Length && GamePad.GetButton(GamePad.Button.A, GamePad.Index.Any))
         {
             StartCoroutine(Reload());
         }

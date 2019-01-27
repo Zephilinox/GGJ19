@@ -13,6 +13,8 @@ public class HorseMovement : MonoBehaviour
     private bool canMoveForward;
     public int deathCount;
 
+    public bool canCollide = true;
+
     GamePad.Index Player;
     GameObject wagon;
     [SerializeField] GameObject horseModel;
@@ -46,9 +48,15 @@ public class HorseMovement : MonoBehaviour
 
     }
 
+    public void StopCollision()
+    {
+        canCollide = false;
+        StartCoroutine(ResetDelay());
+    }
+
     private void OnCollisionStay(Collision collision)
     {
-        if(collision.gameObject.tag == "Horse")
+        if(collision.gameObject.tag == "Horse" && canCollide)
         {
             //GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             GetComponent<BasicMove>().speed = 0;
@@ -105,6 +113,13 @@ public class HorseMovement : MonoBehaviour
         {
             GetComponent<Rigidbody>().AddForce(Vector3.forward * GamePad.GetAxis(GamePad.Axis.LeftStick, Player).y * moveSpeedY);
         }
+    }
+
+    IEnumerator ResetDelay()
+    {
+        yield return new WaitForSeconds(2f);
+
+        canCollide = true;
     }
 
 

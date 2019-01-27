@@ -30,6 +30,7 @@ public class HorseReset : MonoBehaviour
     IEnumerator HorseResetTime(Collider other)
     {
         yield return new WaitForSeconds(3);
+        other.GetComponent<HorseMovement>().StopCollision();
         other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
         other.transform.rotation = Quaternion.identity;
         other.GetComponent<BasicMove>().speed = other.GetComponent<BasicMove>().initialSpeed;

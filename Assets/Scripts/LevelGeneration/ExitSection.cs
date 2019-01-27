@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class ExitSection : MonoBehaviour
 {
-    private GameObject LevelGenerator;
-    public bool isRight;
-
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Wagon")
+        if (other.tag == "Wagon"&& other.isTrigger == false)
         {
             //Delete section once wagon has passed
             Destroy(transform.parent.gameObject);
-            Debug.Log("Destroying");
         }
     }
 }

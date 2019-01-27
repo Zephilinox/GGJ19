@@ -24,9 +24,9 @@ public class NameGenerator : MonoBehaviour
 
     private void Start()
     {
-        NameGenerator firstnameGen = new NameGenerator("/TownNames.txt");
+        NameGenerator nameGen = new NameGenerator("/TownNames.txt");
 
-        string townName = firstnameGen.GenerateRandomWord();
+        string townName = nameGen.GenerateRandomWord();
 
         Debug.Log(townName);
     }

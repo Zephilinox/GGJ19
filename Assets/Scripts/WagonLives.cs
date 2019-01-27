@@ -84,6 +84,9 @@ public class WagonLives : MonoBehaviour
             {
                 StaticPlayerCount.connectedPlayers[i] = false;
             }
+
+            AudioManager.instance.StopAll();
+
             SceneManager.LoadScene("Game");
         }
     }

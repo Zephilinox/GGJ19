@@ -13,9 +13,10 @@ public class LevelGenerator : MonoBehaviour
     public GameManager gameManager;
 
     public static string home;
+    public int winCon = 2;
 
     private bool correctDirection;  //True == right, False == left
-    private int correctWay = 0; //Number of times passing through correct direction
+    public int correctWay = 0; //Number of times passing through correct direction
 
     // Use this for initialization
 	void Start ()
@@ -33,11 +34,32 @@ public class LevelGenerator : MonoBehaviour
 
     void SpawnSection(GameObject oldSection)
     {
-        leftSection = Instantiate(sections[Random.Range(1, sections.Count - 1)]);
-        rightSection = Instantiate(sections[Random.Range(1, sections.Count - 1)]);
+        if (correctWay >= winCon)
+        {
+            if(correctDirection)
+            {
+                leftSection = Instantiate(sections[Random.Range(1, sections.Count - 2)]);
+                rightSection = Instantiate(sections[7]);
+                leftSection.transform.position = currentSection.GetComponent<LevelScript>().leftEOS.NextSpawnPoint.transform.position;
+                rightSection.transform.position = currentSection.GetComponent<LevelScript>().rightEndGameMarker.transform.position;
+            }
+            else
+            {
+                leftSection = Instantiate(sections[7]);
+                rightSection = Instantiate(sections[Random.Range(1, sections.Count - 2)]);
+                rightSection.transform.position = currentSection.GetComponent<LevelScript>().leftEOS.NextSpawnPoint.transform.position;
+                leftSection.transform.position = currentSection.GetComponent<LevelScript>().rightEndGameMarker.transform.position;
+            }
+        }
+        else
+        {
+            leftSection = Instantiate(sections[Random.Range(1, sections.Count - 2)]);
+            rightSection = Instantiate(sections[Random.Range(1, sections.Count - 2)]);
+            leftSection.transform.position = currentSection.GetComponent<LevelScript>().leftEOS.NextSpawnPoint.transform.position;
+            rightSection.transform.position = currentSection.GetComponent<LevelScript>().rightEOS.NextSpawnPoint.transform.position;
+        }
 
-        leftSection.transform.position = currentSection.GetComponent<LevelScript>().leftEOS.NextSpawnPoint.transform.position;
-        rightSection.transform.position = currentSection.GetComponent<LevelScript>().rightEOS.NextSpawnPoint.transform.position;
+        
 
         correctDirection = (Random.value > 0.5f);
 
@@ -53,18 +75,6 @@ public class LevelGenerator : MonoBehaviour
 
         oldSection.GetComponent<LevelScript>().rightSign.text = home + correctArrow;
         oldSection.GetComponent<LevelScript>().leftSign.text = home + correctArrow;
-
-        if (correctWay == 5)
-        {
-            if(correctDirection)
-            {
-                //Spawn house
-            }
-            else
-            {
-                //Dont' spawn house
-            }
-        }
     }
 
     public void OnSectionComplete(GameObject nextSpawnPoint, bool isRight)

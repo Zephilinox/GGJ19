@@ -11093,7 +11093,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1998363540731670}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 123.689354, y: 635.2615, z: 60.07243}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4734902826026618}
@@ -34574,6 +34574,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftEOS: {fileID: 114056948129913146}
   rightEOS: {fileID: 114834914857829686}
+  rightEndGameMarker: {fileID: 1366921249953350}
+  leftEndGameMarker: {fileID: 1687481178592646}
   leftSign: {fileID: 102968959297190244}
   rightSign: {fileID: 102672755774483606}
 --- !u!114 &114056948129913146

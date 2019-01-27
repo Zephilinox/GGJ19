@@ -63,37 +63,19 @@ public class WagonLives : MonoBehaviour
         }
     }
 
-    IEnumerator LoseCargo(float delay)
+    IEnumerator GameOver()
     {
-        GameObject Object = Cargo[current_lives];
-
-        Object.transform.parent = null;
-        Object.GetComponent<Rigidbody>().isKinematic = false;
-
-        Debug.Log("Fucking work");
-
-        if (current_lives > 0)
+        float curTime = Time.time;
+        float time = curTime + 1;
+        Image img = GameObject.Find("Canvas").transform.GetChild(0).GetComponent<Image>();
+        while (curTime < time)
         {
-            yield return new WaitForSeconds(delay);
+            yield return null;
+            curTime = Time.time;
+            Color c = img.color;
+            c.a = Mathf.Lerp(0, 1, 1 - (time - curTime));
+            img.color = c;
         }
-        else
-        {
-            float curTime = Time.time;
-            float time = curTime + 1;
-            Image img = GameObject.Find("Canvas").transform.GetChild(0).GetComponent<Image>();
-            while (curTime < time)
-            {
-                yield return null;
-                curTime = Time.time;
-                Color c = img.color;
-                c.a = Mathf.Lerp(0, 1, 1 - (time - curTime));
-                img.color = c;
-            }
-        }
-
-        invulnerable = false;
-
-        Debug.Log("Fucking work");
 
         if (current_lives <= 0)
         {
@@ -106,6 +88,26 @@ public class WagonLives : MonoBehaviour
 
             SceneManager.LoadScene("Game");
         }
+
+        yield return null;
+    }
+
+    IEnumerator LoseCargo(float delay)
+    {
+        GameObject Object = Cargo[current_lives];
+
+        Object.transform.parent = null;
+        Object.GetComponent<Rigidbody>().isKinematic = false;
+
+        if (current_lives <= 0)
+        {
+            StartCoroutine(GameOver());
+            yield return null;
+        }
+        
+        yield return new WaitForSeconds(delay);
+
+        invulnerable = false;
     }
 
     private void OnTriggerEnter(Collider collider)

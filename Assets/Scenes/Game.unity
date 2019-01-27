@@ -340,52 +340,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &153382382
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 153382384}
-  - component: {fileID: 153382383}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &153382383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 153382382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c324b00e6ed1234380a0e572fdcacab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horses:
-  - {fileID: 2057021260}
-  - {fileID: 582230227}
-  - {fileID: 1373423101}
-  - {fileID: 833705299}
-  speedIncrement: 5
---- !u!4 &153382384
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 153382382}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.329316, y: -184.21735, z: 272.55502}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &216563727
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +902,7 @@ MonoBehaviour:
   - {fileID: 1041542817034492, guid: 9a2ef2bbaa210154080e9b1daf07cfa0, type: 2}
   - {fileID: 1493767176690118, guid: 6bb43e63c7c7ad14f9d355fbf8a6a459, type: 2}
   currentSection: {fileID: 0}
-  gameManager: {fileID: 153382383}
+  gameManager: {fileID: 0}
 --- !u!4 &812669583
 Transform:
   m_ObjectHideFlags: 0

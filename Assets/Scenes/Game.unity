@@ -1760,6 +1760,12 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: WoodCrash
+    clip: {fileID: 8300000, guid: e9b5eb19c9700f145a008de752c9033c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1188557555
 Transform:
   m_ObjectHideFlags: 0

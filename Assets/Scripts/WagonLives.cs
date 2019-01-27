@@ -100,6 +100,7 @@ public class WagonLives : MonoBehaviour
     IEnumerator LoseCargo(float delay)
     {
         GameObject Object = Cargo[current_lives];
+        AudioManager.instance.Play("WoodCrash");
 
         Object.transform.parent = null;
         Object.GetComponent<Rigidbody>().isKinematic = false;

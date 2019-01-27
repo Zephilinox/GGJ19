@@ -5,4 +5,6 @@ using UnityEngine;
 public static class StaticPlayerCount
 {
     public static bool[] connectedPlayers = new bool[4];
+
+    
 }

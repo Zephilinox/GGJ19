@@ -19,6 +19,8 @@ public class CaravanMovement : MonoBehaviour
 
     public float speed;
 
+    public bool canMove = true;
+
     void Start ()
     {
         Horses = GameObject.FindGameObjectsWithTag("Horse").ToList();
@@ -27,7 +29,9 @@ public class CaravanMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if(Horses.Count == 0) {return;}
+        if (!canMove) { return; }
+
+        if (Horses.Count == 0) {return;}
 
         avg_x = 0;
         avg_z = 0;
@@ -58,6 +62,8 @@ public class CaravanMovement : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (!canMove) {return;}
+
         //Wagon Look At!
         Vector3 direction = this.transform.position - previousPosition;
         Vector3 lookAtDirection = transform.InverseTransformDirection(direction);

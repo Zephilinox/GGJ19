@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45082444, g: 0.5007424, b: 0.5746972, a: 1}
+  m_IndirectSpecularColor: {r: 0.45082372, g: 0.5007416, b: 0.57469684, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1529,11 +1529,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music:
-    name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    loop: 0
+    name: Soundtrack
+    clip: {fileID: 8300000, guid: 4c7ecabfc2d5b984e9cfaa7c2b33e29c, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
   sounds:
   - name: CartWheelMoving
@@ -1544,7 +1544,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: GallopingFullSpeed
     clip: {fileID: 8300000, guid: 54885f97ad76f0844bf2d55c04d2bd68, type: 3}
-    volume: 1
+    volume: 0.8
     pitch: 1
     loop: 1
     source: {fileID: 0}

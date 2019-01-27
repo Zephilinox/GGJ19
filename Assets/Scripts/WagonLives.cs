@@ -70,8 +70,6 @@ public class WagonLives : MonoBehaviour
         Object.transform.parent = null;
         Object.GetComponent<Rigidbody>().isKinematic = false;
 
-        Debug.Log("Fucking work");
-
         if (current_lives > 0)
         {
             yield return new WaitForSeconds(delay);

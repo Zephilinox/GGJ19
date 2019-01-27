@@ -14,20 +14,12 @@ public class MainMenuSelection : MonoBehaviour
     public GameObject[] lineRenders;
 
     
-
-    //private void Start()
-    //{
-    //    horses = GameObject.FindGameObjectsWithTag("Horse");
-    //}
-
     private void Update()
     {
         for (int i = 0; i < 4; i++)
         {
             horses[i].SetActive(StaticPlayerCount.connectedPlayers[i]);
             lineRenders[i].SetActive(StaticPlayerCount.connectedPlayers[i]);
-
-
         }
 
         if (mainMenu)
@@ -50,6 +42,7 @@ public class MainMenuSelection : MonoBehaviour
                 if (!flipping && playSelected)
                 {
                     GetComponent<Animator>().Play("MainMenu");
+                    AudioManager.instance.Play("GunShot1");
                     flipping = true;
                 }
                 else if (!flipping && !playSelected)
@@ -73,6 +66,7 @@ public class MainMenuSelection : MonoBehaviour
             {
                 if (GamePad.GetButton(GamePad.Button.A, GamePad.Index.One + i))
                 {
+                    AudioManager.instance.Play("Neigh1");
                     transform.GetChild(2).GetChild(i).GetChild(0).gameObject.SetActive(true);
                     transform.GetChild(2).GetChild(i).GetComponent<SpriteRenderer>().enabled = false;
                     StaticPlayerCount.connectedPlayers[i] = true;
@@ -88,6 +82,8 @@ public class MainMenuSelection : MonoBehaviour
                     transform.GetChild(3).gameObject.SetActive(true);
                     if (GamePad.GetButton(GamePad.Button.Start, GamePad.Index.Any))
                     {
+
+                        AudioManager.instance.Play("GunShot2");
                         Camera.main.GetComponent<CameraMovement>().enabled = true;
 
                         AudioManager.instance.Play("CartWheelMoving");
@@ -137,10 +133,6 @@ public class MainMenuSelection : MonoBehaviour
             }
 
             transform.GetChild(3).gameObject.SetActive(false);
-
-
-
-
             return;
         }
             

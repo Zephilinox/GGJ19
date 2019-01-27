@@ -900,7 +900,6 @@ MonoBehaviour:
   - {fileID: 1493767176690118, guid: 6bb43e63c7c7ad14f9d355fbf8a6a459, type: 2}
   - {fileID: 1816726105266730, guid: 202d86a0766237b4e8c90dc2d0a6ac0b, type: 2}
   - {fileID: 1041542817034492, guid: 9a2ef2bbaa210154080e9b1daf07cfa0, type: 2}
-  - {fileID: 1493767176690118, guid: 6bb43e63c7c7ad14f9d355fbf8a6a459, type: 2}
   currentSection: {fileID: 0}
 --- !u!4 &812669583
 Transform:
@@ -1559,6 +1558,54 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: CartWheelMoving2
+    clip: {fileID: 8300000, guid: 88515d51eead83e4ea1a41b5a157d5b7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GunBattle
+    clip: {fileID: 8300000, guid: c7ee1a3dfecab094f8394bf788fef138, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GunReload
+    clip: {fileID: 8300000, guid: aebe5a5f85c57474189dc0372e6741e4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GunShot1
+    clip: {fileID: 8300000, guid: 73afe2e31a47ce54bb091963bf3ad2d3, type: 3}
+    volume: 0.768
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GunShot2
+    clip: {fileID: 8300000, guid: 6c68e0f3b907c7d4f9fb845eb1755298, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Neigh1
+    clip: {fileID: 8300000, guid: 42e85575a4245ce4d857eccc614209dd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Neigh2
+    clip: {fileID: 8300000, guid: 09c43bb96fd73f646bd57b93b1e75c8a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: River
+    clip: {fileID: 8300000, guid: 49b69080fab2c5a46adb1f32c58f3ec0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!4 &1188557555
 Transform:
   m_ObjectHideFlags: 0
@@ -1566,7 +1613,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1188557553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.74809, y: 22.415064, z: 0.951622}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -1600,8 +1600,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music:
     name: Soundtrack
-    clip: {fileID: 8300000, guid: 4c7ecabfc2d5b984e9cfaa7c2b33e29c, type: 3}
-    volume: 0.5
+    clip: {fileID: 8300000, guid: 30f21be2102ffe54b96429397ce56e40, type: 3}
+    volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}

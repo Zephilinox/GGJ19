@@ -6,4 +6,6 @@ public class LevelScript : MonoBehaviour {
 
     public EndOfSection leftEOS;
     public EndOfSection rightEOS;
+    public TextMesh leftSign;
+    public TextMesh rightSign;
 }

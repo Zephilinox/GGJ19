@@ -10,7 +10,7 @@ public class LevelGenerator : MonoBehaviour
     private GameObject leftSection;
     private GameObject rightSection;
 
-    
+    public static string home;
 
     private bool correctDirection;  //True == right, False == left
     private int correctWay = 0; //Number of times passing through correct direction
@@ -21,13 +21,15 @@ public class LevelGenerator : MonoBehaviour
         currentSection = Instantiate(sections[0]);
         currentSection.transform.position = (Vector3.zero);
 
+        NameGenerator nameGenerator = new NameGenerator("/TownNames.txt");
 
+        home = nameGenerator.GenerateRandomWord();
 
-        SpawnSection();
+        SpawnSection(currentSection);
     }
 	
 
-    void SpawnSection()
+    void SpawnSection(GameObject oldSection)
     {
         leftSection = Instantiate(sections[Random.Range(1, sections.Count - 1)]);
         rightSection = Instantiate(sections[Random.Range(1, sections.Count - 1)]);
@@ -37,7 +39,20 @@ public class LevelGenerator : MonoBehaviour
 
         correctDirection = (Random.value > 0.5f);
 
-        if(correctWay == 5)
+        string correctArrow;
+        if (correctDirection)
+        {
+            correctArrow = " ->";
+        }
+        else
+        {
+            correctArrow = " <-";
+        }
+
+        oldSection.GetComponent<LevelScript>().rightSign.text = home + correctArrow;
+        oldSection.GetComponent<LevelScript>().leftSign.text = home + correctArrow;
+
+        if (correctWay == 5)
         {
             if(correctDirection)
             {
@@ -54,6 +69,8 @@ public class LevelGenerator : MonoBehaviour
     {
         //cycle through all stored levels that are available
         //first one thats unused, move to target pos
+
+        GameObject oldSection = currentSection;
 
         if (isRight)
         {
@@ -77,6 +94,6 @@ public class LevelGenerator : MonoBehaviour
 
         //destroy old one if we can yet
 
-        SpawnSection();
+        SpawnSection(oldSection);
     }
 }

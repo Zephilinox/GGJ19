@@ -65,7 +65,13 @@ public class AudioManager : MonoBehaviour
 		return musicOn;
 	}
 
-	public bool ToggleSFX()
+    public void ResetMusic()
+    {
+        music.source.Stop();
+        music.source.Play();
+    }
+
+    public bool ToggleSFX()
 	{
 		sfxOn = !sfxOn;
 		return sfxOn;

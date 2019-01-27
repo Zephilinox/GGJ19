@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     {
         //horses = GameObject.FindGameObjectsWithTag("Horse");
         wagon = GameObject.FindGameObjectWithTag("Wagon");
+
+        AudioManager.instance.ResetMusic();
     }
 
     public void IncrementBaseSpeed(float speedIncrement)
@@ -21,7 +23,8 @@ public class GameManager : MonoBehaviour
         foreach (GameObject horse in horses)
         {
             horse.GetComponent<BasicMove>().speed += speedIncrement;
-            horse.GetComponent<BasicMove>().initialSpeed = horse.GetComponent<BasicMove>().speed;
+            horse.GetComponent<BasicMove>().initialSpeed += speedIncrement;
+            horse.GetComponent<HorseMovement>().moveSpeedX += speedIncrement * 2;
         }
 
         wagon.GetComponent<BasicMove>().speed += speedIncrement;

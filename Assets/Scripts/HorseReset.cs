@@ -21,6 +21,8 @@ public class HorseReset : MonoBehaviour
             other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             other.GetComponent<BasicMove>().speed = 0;
             other.GetComponent<HorseMovement>().moveSpeedY = other.GetComponent<HorseMovement>().moveSpeedY / 2;
+            AudioManager.instance.Play("Neigh2");
+
 
             StartCoroutine(HorseResetTime(other));
         }
@@ -28,6 +30,7 @@ public class HorseReset : MonoBehaviour
     IEnumerator HorseResetTime(Collider other)
     {
         yield return new WaitForSeconds(3);
+        other.GetComponent<HorseMovement>().StopCollision();
         other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
         other.transform.rotation = Quaternion.identity;
         other.GetComponent<BasicMove>().speed = other.GetComponent<BasicMove>().initialSpeed;

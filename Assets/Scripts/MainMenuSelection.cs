@@ -47,6 +47,8 @@ public class MainMenuSelection : MonoBehaviour
 
             if (GamePad.GetButton(GamePad.Button.A, GamePad.Index.Any))
             {
+                AudioManager.instance.Play("GunShot1");
+
                 if (!flipping && playSelected)
                 {
                     GetComponent<Animator>().Play("MainMenu");
@@ -73,6 +75,8 @@ public class MainMenuSelection : MonoBehaviour
             {
                 if (GamePad.GetButton(GamePad.Button.A, GamePad.Index.One + i))
                 {
+                    AudioManager.instance.Play("Neigh1");
+
                     transform.GetChild(2).GetChild(i).GetChild(0).gameObject.SetActive(true);
                     transform.GetChild(2).GetChild(i).GetComponent<SpriteRenderer>().enabled = false;
                     StaticPlayerCount.connectedPlayers[i] = true;
@@ -88,9 +92,12 @@ public class MainMenuSelection : MonoBehaviour
                     transform.GetChild(3).gameObject.SetActive(true);
                     if (GamePad.GetButton(GamePad.Button.Start, GamePad.Index.Any))
                     {
+                        AudioManager.instance.Play("GunShot2");
+
                         Camera.main.GetComponent<CameraMovement>().enabled = true;
 
                         AudioManager.instance.Play("CartWheelMoving");
+                        AudioManager.instance.Play("CartWheel2");
                         AudioManager.instance.Play("GallopingFullSpeed");
                         AudioManager.instance.Play("Wind");
 

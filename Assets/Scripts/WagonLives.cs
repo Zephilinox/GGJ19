@@ -54,6 +54,8 @@ public class WagonLives : MonoBehaviour
                 foreach (GameObject horse in horses)
                 {
                     horse.GetComponent<BasicMove>().enabled = false;
+                    horse.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+
                 }
                 StartCoroutine(LoseCargo(5f));
             }

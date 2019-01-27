@@ -13,6 +13,8 @@ public class HorseMovement : MonoBehaviour
     private bool canMoveForward;
     public int deathCount;
 
+    public bool canCollide = true;
+
     GamePad.Index Player;
     GameObject wagon;
     [SerializeField] GameObject horseModel;
@@ -43,12 +45,32 @@ public class HorseMovement : MonoBehaviour
 
     void Update()
     {
+        if(transform.position.y <-5)
+        {
+            HorseReset();
+        }
+    }
 
+    void HorseReset()
+    {
+        StopCollision();
+        gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+        gameObject.transform.rotation = Quaternion.identity;
+        gameObject.GetComponent<BasicMove>().speed = gameObject.GetComponent<BasicMove>().initialSpeed;
+        gameObject.transform.position = GameObject.FindGameObjectWithTag("Wagon").transform.position + new Vector3(0, 0, 5);
+        moveSpeedY = gameObject.GetComponent<HorseMovement>().initialMoveY;
+        deathCount++;
+    }
+
+    public void StopCollision()
+    {
+        canCollide = false;
+        StartCoroutine(ResetDelay());
     }
 
     private void OnCollisionStay(Collision collision)
     {
-        if(collision.gameObject.tag == "Horse")
+        if(collision.gameObject.tag == "Horse" && canCollide)
         {
             //GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             GetComponent<BasicMove>().speed = 0;
@@ -60,7 +82,7 @@ public class HorseMovement : MonoBehaviour
         {
             //GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             GetComponent<BasicMove>().speed = GetComponent<BasicMove>().initialSpeed;
-            ;
+            
         }
     }
 
@@ -105,6 +127,13 @@ public class HorseMovement : MonoBehaviour
         {
             GetComponent<Rigidbody>().AddForce(Vector3.forward * GamePad.GetAxis(GamePad.Axis.LeftStick, Player).y * moveSpeedY);
         }
+    }
+
+    IEnumerator ResetDelay()
+    {
+        yield return new WaitForSeconds(2f);
+
+        canCollide = true;
     }
 
 

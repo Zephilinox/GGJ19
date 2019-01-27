@@ -34,29 +34,49 @@ public class LevelGenerator : MonoBehaviour
 
     void SpawnSection(GameObject oldSection)
     {
-        if (correctWay >= winCon)
-        {
-            if(correctDirection)
-            {
-                leftSection = Instantiate(sections[Random.Range(1, sections.Count - 2)]);
-                rightSection = Instantiate(sections[7]);
-                leftSection.transform.position = currentSection.GetComponent<LevelScript>().leftEOS.NextSpawnPoint.transform.position;
-                rightSection.transform.position = currentSection.GetComponent<LevelScript>().rightEndGameMarker.transform.position;
-            }
-            else
-            {
-                leftSection = Instantiate(sections[7]);
-                rightSection = Instantiate(sections[Random.Range(1, sections.Count - 2)]);
-                rightSection.transform.position = currentSection.GetComponent<LevelScript>().leftEOS.NextSpawnPoint.transform.position;
-                leftSection.transform.position = currentSection.GetComponent<LevelScript>().rightEndGameMarker.transform.position;
-            }
+        if (correctWay >= winCon)
+
+        {
+
+            if(correctDirection)
+
+            {
+
+                leftSection = Instantiate(sections[Random.Range(1, sections.Count - 2)]);
+
+                rightSection = Instantiate(sections[7]);
+
+                leftSection.transform.position = currentSection.GetComponent<LevelScript>().leftEOS.NextSpawnPoint.transform.position;
+
+                rightSection.transform.position = currentSection.GetComponent<LevelScript>().rightEndGameMarker.transform.position;
+
+            }
+
+            else
+
+            {
+
+                leftSection = Instantiate(sections[7]);
+
+                rightSection = Instantiate(sections[Random.Range(1, sections.Count - 2)]);
+
+                rightSection.transform.position = currentSection.GetComponent<LevelScript>().rightEOS.NextSpawnPoint.transform.position;
+
+                leftSection.transform.position = currentSection.GetComponent<LevelScript>().leftEndGameMarker.transform.position;
+            }
+
         }
-        else
-        {
-            leftSection = Instantiate(sections[Random.Range(1, sections.Count - 2)]);
-            rightSection = Instantiate(sections[Random.Range(1, sections.Count - 2)]);
+        else
+
+        {
+
+            leftSection = Instantiate(sections[Random.Range(1, sections.Count - 2)]);
+
+            rightSection = Instantiate(sections[Random.Range(1, sections.Count - 2)]);
+
             leftSection.transform.position = currentSection.GetComponent<LevelScript>().leftEOS.NextSpawnPoint.transform.position;
-            rightSection.transform.position = currentSection.GetComponent<LevelScript>().rightEOS.NextSpawnPoint.transform.position;
+            rightSection.transform.position = currentSection.GetComponent<LevelScript>().rightEOS.NextSpawnPoint.transform.position;
+
         }
 
         

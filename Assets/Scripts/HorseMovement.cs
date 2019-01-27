@@ -82,7 +82,7 @@ public class HorseMovement : MonoBehaviour
         {
             //GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             GetComponent<BasicMove>().speed = GetComponent<BasicMove>().initialSpeed;
-            ;
+            
         }
     }
 

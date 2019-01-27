@@ -974,7 +974,8 @@ MonoBehaviour:
   - {fileID: 1096780409595742, guid: 670796bbe27ccdc4c980b368c93b6e36, type: 2}
   currentSection: {fileID: 0}
   gameManager: {fileID: 1999150962}
-  winCon: 5
+  winCon: 1
+  correctWay: 0
 --- !u!4 &812669583
 Transform:
   m_ObjectHideFlags: 0
@@ -986,7 +987,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &833705299 stripped
 GameObject:
@@ -1743,6 +1744,12 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: River
     clip: {fileID: 8300000, guid: 49b69080fab2c5a46adb1f32c58f3ec0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Wind
+    clip: {fileID: 8300000, guid: e4c96c426ed72c345a4cbd09a1c3e216, type: 3}
     volume: 1
     pitch: 1
     loop: 1
@@ -2835,7 +2842,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4292103417744714, guid: 42b1032e75e0c4a4abeda76ae62382c8, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114759361725514046, guid: 42b1032e75e0c4a4abeda76ae62382c8,
         type: 2}

@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject[] horses;
+    GameObject wagon;
 
-	// Use this for initialization
-	void Start ()
+    [SerializeField]
+    
+    // Use this for initialization
+    void Start()
     {
-        
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        //horses = GameObject.FindGameObjectsWithTag("Horse");
+        wagon = GameObject.FindGameObjectWithTag("Wagon");
+    }
+
+    public void IncrementBaseSpeed(float speedIncrement)
+    {
+        foreach (GameObject horse in horses)
+        {
+            horse.GetComponent<BasicMove>().speed += speedIncrement;
+            horse.GetComponent<BasicMove>().initialSpeed = horse.GetComponent<BasicMove>().speed;
+        }
+
+        wagon.GetComponent<BasicMove>().speed += speedIncrement;
+    }
+
 }
+

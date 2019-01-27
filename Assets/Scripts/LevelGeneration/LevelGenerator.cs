@@ -10,6 +10,8 @@ public class LevelGenerator : MonoBehaviour
     private GameObject leftSection;
     private GameObject rightSection;
 
+    public GameManager gameManager;
+
     public static string home;
 
     private bool correctDirection;  //True == right, False == left
@@ -67,6 +69,7 @@ public class LevelGenerator : MonoBehaviour
 
     public void OnSectionComplete(GameObject nextSpawnPoint, bool isRight)
     {
+
         //cycle through all stored levels that are available
         //first one thats unused, move to target pos
 
@@ -78,7 +81,12 @@ public class LevelGenerator : MonoBehaviour
             Destroy(leftSection);
             if(correctDirection)
             {
+                gameManager.IncrementBaseSpeed(5f);
                 correctWay++;
+            }
+            else
+            {
+                gameManager.IncrementBaseSpeed(2.5f);
             }
         }
         else
@@ -87,7 +95,12 @@ public class LevelGenerator : MonoBehaviour
             Destroy(rightSection);
             if (!correctDirection)
             {
+                gameManager.IncrementBaseSpeed(5f);
                 correctWay++;
+            }
+            else
+            {
+                gameManager.IncrementBaseSpeed(2.5f);
             }
         }
 

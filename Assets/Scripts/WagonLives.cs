@@ -96,7 +96,7 @@ public class WagonLives : MonoBehaviour
         if (collider.CompareTag("Obstacle"))
         {
             LoseLife();
-            Debug.Log(collider.gameObject.name);
+            Debug.Log(collider);
         }
     }
 }

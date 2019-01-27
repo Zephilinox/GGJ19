@@ -52,6 +52,8 @@ public class WagonLives : MonoBehaviour
                 foreach (GameObject horse in horses)
                 {
                     horse.GetComponent<BasicMove>().enabled = false;
+                    horse.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+
                 }
                 StartCoroutine(LoseCargo(5f));
             }
@@ -68,6 +70,9 @@ public class WagonLives : MonoBehaviour
         float curTime = Time.time;
         float time = curTime + 1;
         Image img = GameObject.Find("FadeToBlackCanvas").transform.GetChild(0).GetComponent<Image>();
+
+        yield return new WaitForSeconds(4f);
+
         while (curTime < time)
         {
             yield return null;

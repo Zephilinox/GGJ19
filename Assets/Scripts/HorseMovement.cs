@@ -45,7 +45,21 @@ public class HorseMovement : MonoBehaviour
 
     void Update()
     {
+        if(transform.position.y <-5)
+        {
+            HorseReset();
+        }
+    }
 
+    void HorseReset()
+    {
+        StopCollision();
+        gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+        gameObject.transform.rotation = Quaternion.identity;
+        gameObject.GetComponent<BasicMove>().speed = gameObject.GetComponent<BasicMove>().initialSpeed;
+        gameObject.transform.position = GameObject.FindGameObjectWithTag("Wagon").transform.position + new Vector3(0, 0, 5);
+        moveSpeedY = gameObject.GetComponent<HorseMovement>().initialMoveY;
+        deathCount++;
     }
 
     public void StopCollision()

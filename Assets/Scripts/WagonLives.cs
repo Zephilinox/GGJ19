@@ -20,6 +20,8 @@ public class WagonLives : MonoBehaviour
 
     private bool invulnerable = false;
 
+    public GameObject graveyard;
+
     void Start()
     {
         current_lives = max_lives;
@@ -67,32 +69,7 @@ public class WagonLives : MonoBehaviour
 
     IEnumerator GameOver()
     {
-        float curTime = Time.time;
-        float time = curTime + 1;
-        Image img = GameObject.Find("FadeToBlackCanvas").transform.GetChild(0).GetComponent<Image>();
-
-        yield return new WaitForSeconds(4f);
-
-        while (curTime < time)
-        {
-            yield return null;
-            curTime = Time.time;
-            Color c = img.color;
-            c.a = Mathf.Lerp(0, 1, 1 - (time - curTime));
-            img.color = c;
-        }
-
-        if (current_lives <= 0)
-        {
-            for (int i = 0; i < 4; i++)
-            {
-                StaticPlayerCount.connectedPlayers[i] = false;
-            }
-
-            AudioManager.instance.StopAll();
-
-            SceneManager.LoadScene("Game");
-        }
+        graveyard.SetActive(true);
 
         yield return null;
     }

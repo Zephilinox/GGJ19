@@ -69,7 +69,7 @@ public class CaravanMovement : MonoBehaviour
         Vector3 lookAtDirection = transform.InverseTransformDirection(direction);
 
         previousPosition = this.transform.position;
-
+        
         model.transform.localRotation = Quaternion.LookRotation(new Vector3(lookAtDirection.x, 0f, lookAtDirection.z));
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45082372, g: 0.5007416, b: 0.57469684, a: 1}
+  m_IndirectSpecularColor: {r: 0.45082444, g: 0.5007424, b: 0.5746972, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -746,6 +746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   caravanModel: {fileID: 1907952381}
   speed: 2
+  speedY: 8
   offset: {x: 0, y: 10, z: -7.5}
 --- !u!1 &514955147 stripped
 GameObject:

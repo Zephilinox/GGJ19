@@ -5646,7 +5646,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1922136737870030}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.65997, z: -3.0399354}
+  m_LocalPosition: {x: 2.95, y: 8.6, z: -3.0399354}
   m_LocalScale: {x: 0.20000008, y: 0.19999999, z: 0.2000001}
   m_Children: []
   m_Father: {fileID: 4923981558245724}
@@ -5903,7 +5903,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1273300512885798}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.65997, z: -3.0399354}
+  m_LocalPosition: {x: 3.67, y: 8.43, z: -3.0399354}
   m_LocalScale: {x: 0.20000008, y: 0.19999999, z: 0.2000001}
   m_Children: []
   m_Father: {fileID: 4774131983253720}
@@ -7802,7 +7802,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1238327545575962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.23, y: 10.66, z: -3.04}
+  m_LocalPosition: {x: 3.69, y: 8.39, z: -3.04}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 4313987182673222}
@@ -8226,8 +8226,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1272554405748494}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 1, z: 10}
+  m_LocalPosition: {x: -3.7, y: 0, z: 0}
+  m_LocalScale: {x: 24.636, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 4680958412689806}
   m_RootOrder: 3
@@ -10083,7 +10083,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 32d866386bab2fa46ad1daeb0f35235a, type: 2}
+  - {fileID: 2100000, guid: bea289eb96bba9849bbb5ddc41e08d34, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10786,7 +10786,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: f66f318ee55548d419eef9f04dc3fa89, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11421,7 +11421,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 32d866386bab2fa46ad1daeb0f35235a, type: 2}
+  - {fileID: 2100000, guid: bea289eb96bba9849bbb5ddc41e08d34, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12690,7 +12690,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 32d866386bab2fa46ad1daeb0f35235a, type: 2}
+  - {fileID: 2100000, guid: 3fa1a24b440509f4d8b5df369571252b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13461,7 +13461,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 32d866386bab2fa46ad1daeb0f35235a, type: 2}
+  - {fileID: 2100000, guid: 3fa1a24b440509f4d8b5df369571252b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13532,7 +13532,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 32d866386bab2fa46ad1daeb0f35235a, type: 2}
+  - {fileID: 2100000, guid: 3fa1a24b440509f4d8b5df369571252b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14130,7 +14130,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: f66f318ee55548d419eef9f04dc3fa89, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14165,7 +14165,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: f66f318ee55548d419eef9f04dc3fa89, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14692,7 +14692,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 32d866386bab2fa46ad1daeb0f35235a, type: 2}
+  - {fileID: 2100000, guid: 3fa1a24b440509f4d8b5df369571252b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17248,17 +17248,17 @@ TextMesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1922136737870030}
-  m_Text: Text
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
-  m_Anchor: 0
+  m_Anchor: 4
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 200
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: f66f318ee55548d419eef9f04dc3fa89, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -17269,17 +17269,17 @@ TextMesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1238327545575962}
-  m_Text: Text
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
-  m_Anchor: 0
+  m_Anchor: 4
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 200
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: f66f318ee55548d419eef9f04dc3fa89, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -17290,17 +17290,17 @@ TextMesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1273300512885798}
-  m_Text: Text
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
-  m_Anchor: 0
+  m_Anchor: 4
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 200
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: f66f318ee55548d419eef9f04dc3fa89, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -17338,6 +17338,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftEOS: {fileID: 114934758940248522}
   rightEOS: {fileID: 114578821352403100}
+  rightEndGameMarker: {fileID: 0}
+  leftEndGameMarker: {fileID: 0}
   leftSign: {fileID: 102625156533059190}
   rightSign: {fileID: 102480080385316024}
 --- !u!114 &114480225462901528

@@ -67,7 +67,7 @@ public class WagonLives : MonoBehaviour
     {
         float curTime = Time.time;
         float time = curTime + 1;
-        Image img = GameObject.Find("Canvas").transform.GetChild(0).GetComponent<Image>();
+        Image img = GameObject.Find("FadeToBlackCanvas").transform.GetChild(0).GetComponent<Image>();
         while (curTime < time)
         {
             yield return null;

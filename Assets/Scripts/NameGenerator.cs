@@ -170,7 +170,6 @@ public class NameGenerator : MonoBehaviour
         return result;
     }
 
-
     string GenerateRandomWord(int minLength, int maxLength)
     {
         string result;

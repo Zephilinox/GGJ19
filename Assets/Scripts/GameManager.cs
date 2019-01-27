@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         foreach (GameObject horse in horses)
         {
             horse.GetComponent<BasicMove>().speed += speedIncrement;
-            horse.GetComponent<BasicMove>().initialSpeed = horse.GetComponent<BasicMove>().speed;
+            horse.GetComponent<BasicMove>().initialSpeed += speedIncrement;
         }
 
         wagon.GetComponent<BasicMove>().speed += speedIncrement;

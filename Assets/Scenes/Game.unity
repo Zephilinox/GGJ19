@@ -1601,7 +1601,7 @@ MonoBehaviour:
   music:
     name: Soundtrack
     clip: {fileID: 8300000, guid: 30f21be2102ffe54b96429397ce56e40, type: 3}
-    volume: 1
+    volume: 0.9
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -1614,7 +1614,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: GallopingFullSpeed
     clip: {fileID: 8300000, guid: 54885f97ad76f0844bf2d55c04d2bd68, type: 3}
-    volume: 0.8
+    volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}

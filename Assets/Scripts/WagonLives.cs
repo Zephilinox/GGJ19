@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.Remoting.Messaging;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WagonLives : MonoBehaviour
 {
@@ -14,8 +15,6 @@ public class WagonLives : MonoBehaviour
     [SerializeField]
     private Animator ModelAnimator;
 
-
-
     private int current_lives;
 
     private bool invulnerable = false;
@@ -23,6 +22,8 @@ public class WagonLives : MonoBehaviour
     void Start()
     {
         current_lives = max_lives;
+
+        
     }
 
     void Update()
@@ -43,8 +44,9 @@ public class WagonLives : MonoBehaviour
             if (current_lives <= 0)
             {
                 GetComponent<BasicMove>().enabled = false;
-                GameObject[] horses = GameObject.FindGameObjectsWithTag("Horse");
+                
                 GameObject caravan = GameObject.FindGameObjectWithTag("Wagon");
+                GameObject[] horses = GameObject.FindGameObjectsWithTag("Horse");
 
                 caravan.GetComponent<CaravanMovement>().canMove = false;
 
@@ -52,7 +54,7 @@ public class WagonLives : MonoBehaviour
                 {
                     horse.GetComponent<BasicMove>().enabled = false;
                 }
-                StartCoroutine(LoseCargo(0));
+                StartCoroutine(LoseCargo(5f));
             }
             else if (current_lives > 0)
             {
@@ -69,8 +71,21 @@ public class WagonLives : MonoBehaviour
         Object.transform.parent = null;
         Object.GetComponent<Rigidbody>().isKinematic = false;
 
+        Debug.Log("Fucking work");
+
         yield return new WaitForSeconds(delay);
         invulnerable = false;
+
+        Debug.Log("Fucking work");
+
+        if (current_lives <= 0)
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                StaticPlayerCount.connectedPlayers[i] = false;
+            }
+            SceneManager.LoadScene("Game");
+        }
     }
 
     private void OnTriggerEnter(Collider collider)

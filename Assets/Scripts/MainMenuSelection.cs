@@ -103,12 +103,12 @@ public class MainMenuSelection : MonoBehaviour
                             foreach(GameObject horse in horses)
                             {
                                 horse.GetComponent<BasicMove>().enabled = true;
-                                GameObject.FindGameObjectWithTag("Wagon").GetComponent<BasicMove>().enabled = true;
                                 if (horse.activeSelf)
                                 {
                                     GameObject.FindGameObjectWithTag("Wagon").GetComponent<CaravanMovement>().Horses.Add(horse);
                                 }
                             }
+                            GameObject.FindGameObjectWithTag("Wagon").GetComponent<BasicMove>().enabled = true;
                         }
                     }
                 }

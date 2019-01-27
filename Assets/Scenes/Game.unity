@@ -1554,8 +1554,38 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: GunBattle
+    clip: {fileID: 8300000, guid: c7ee1a3dfecab094f8394bf788fef138, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GunShot1
+    clip: {fileID: 8300000, guid: 73afe2e31a47ce54bb091963bf3ad2d3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GunShot2
+    clip: {fileID: 8300000, guid: 6c68e0f3b907c7d4f9fb845eb1755298, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Neigh1
+    clip: {fileID: 8300000, guid: 42e85575a4245ce4d857eccc614209dd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Neigh2
+    clip: {fileID: 8300000, guid: 09c43bb96fd73f646bd57b93b1e75c8a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
   - name: Wind
-    clip: {fileID: 8300000, guid: e4c96c426ed72c345a4cbd09a1c3e216, type: 3}
+    clip: {fileID: 8300000, guid: 49b69080fab2c5a46adb1f32c58f3ec0, type: 3}
     volume: 1
     pitch: 1
     loop: 1

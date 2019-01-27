@@ -1689,7 +1689,7 @@ MonoBehaviour:
   music:
     name: Soundtrack
     clip: {fileID: 8300000, guid: 30f21be2102ffe54b96429397ce56e40, type: 3}
-    volume: 0.9
+    volume: 0.75
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -1754,8 +1754,8 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: Wind
-    clip: {fileID: 8300000, guid: e4c96c426ed72c345a4cbd09a1c3e216, type: 3}
+  - name: CartWheel2
+    clip: {fileID: 8300000, guid: 88515d51eead83e4ea1a41b5a157d5b7, type: 3}
     volume: 1
     pitch: 1
     loop: 1

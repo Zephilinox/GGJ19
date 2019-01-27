@@ -97,6 +97,7 @@ public class MainMenuSelection : MonoBehaviour
                         Camera.main.GetComponent<CameraMovement>().enabled = true;
 
                         AudioManager.instance.Play("CartWheelMoving");
+                        AudioManager.instance.Play("CartWheel2");
                         AudioManager.instance.Play("GallopingFullSpeed");
                         AudioManager.instance.Play("Wind");
 

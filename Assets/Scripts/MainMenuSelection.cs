@@ -110,6 +110,8 @@ public class MainMenuSelection : MonoBehaviour
                             foreach(GameObject horse in horses)
                             {
                                 horse.GetComponent<BasicMove>().enabled = true;
+                                horse.GetComponent<BasicMove>().speed = 20;
+
                                 if (horse.activeSelf)
                                 {
                                     GameObject.FindGameObjectWithTag("Wagon").GetComponent<CaravanMovement>().Horses.Add(horse);
